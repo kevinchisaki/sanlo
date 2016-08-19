@@ -1,0 +1,43 @@
+@mixin vertical-align() {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin pathway-gothic(){
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin baskerville-regular(){
+	font-family: 'Libre Baskerville', serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin playfair-regular(){
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin playfair-italic(){
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+@mixin sourcesans-regular() {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+
+
+
+

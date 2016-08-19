@@ -1,0 +1,633 @@
+// Mobile
+
+::selection {
+  background: #E6F0F8;
+  color: $sanlo-default;
+}
+::-moz-selection {
+  background: #E6F0F8;
+  color: $sanlo-default;
+}
+
+body {
+	background-color: $sanlo-navy;
+	color: $default;
+}
+
+// Globals
+
+.sanlo-button {
+	@include sourcesans-regular;
+	text-transform: uppercase;
+	letter-spacing: 0.10em;
+	padding: 15px 30px 15px 30px;
+	display: inline-block;
+	border: 1.8px solid $sanlo-gold;
+	color: $sanlo-gold;
+	transition: background 0.5s, color 0.5s;
+	&:hover {
+		background-color: $sanlo-gold;
+		color: #fff;
+		transition: background 0.5s, color 0.5s;
+	}
+}
+
+// Homepage
+
+.menu-button {
+	position: fixed;
+	z-index: 999;
+	top: 5px;
+	right: 0px;
+	.hamburger-box {
+
+		.hamburger-inner{
+
+		}
+	}
+}
+
+.main-nav-bg {
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+	padding: 0.5em 0em 0.8em 0em;
+	z-index: 100;
+	.sanlo-logo {
+
+		a {
+			@include playfair-italic;
+			display: inline-block;
+			color: $sanlo-navy;
+			font-size: 2em;
+			margin-top: 0px;
+			transition: background 0.5s, color 0.5s;
+			&:hover {
+				color: $sanlo-gold;
+				transition: background 0.5s, color 0.5s;
+			}
+		}
+	}
+
+	.nav-link-holder {
+		display: none;
+	}
+}
+
+.mobile-nav-panel {
+	background-color: rgba(255,255,255,0.97);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	display: flex;
+	opacity: 0;
+	z-index: -100;
+	height: 100vh;
+	width: 100%;
+	transition: opacity 0.5s;
+	transition-timing-function: ease;
+		.mobile-nav-links {
+			text-align: center;
+			margin-top: -5em;
+			opacity: 0;
+			transition: margin 0.5s, opacity 0.5s;
+			transition-timing-function: ease;
+				li {
+					margin: 1em 0em 1em 0em;
+					a {
+						display: block;
+						@include pathway-gothic;
+						text-transform: uppercase;
+						color: $sanlo-gold;
+						font-size: 2em;
+						transition: all 0.5s ease;
+					}
+					.down-arrow {
+						background-image: url('../img/arrow-down.svg');
+						background-repeat: no-repeat;
+						display: none;
+						height: 9px;
+						width: 14px;
+					}
+					.down-arrow-ministries {
+						background-image: url('../img/arrow-down.svg');
+						background-repeat: no-repeat;
+						display: none;
+						height: 9px;
+						width: 14px;
+					}
+					.mobile-sub-nav {
+						margin: 0;
+							a {
+								font-size: 1.5em;
+								color: #CBCBCB;
+							}
+					}
+				}
+		}
+}
+
+.arrow-show {
+	display: inline-block !important;
+}
+
+.show-panel {
+	z-index: 105;
+	opacity: 1;
+	transition: opacity 0.5s;
+	transition-timing-function: ease;
+}
+
+.show-nav {
+	margin-top: 0em !important;
+	opacity: 1 !important;
+	transition: margin 0.5s, opacity 0.5s;
+	transition-timing-function: ease;
+}
+
+// Home Hero
+
+	.home-hero {
+		background: url(../img/sanlo-home.jpg) no-repeat; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+		background-color: #f2f2f2;
+		overflow: hidden;
+		height: 70vh;
+		z-index: -101;
+		padding-top: 1.7em;
+			.welcome-container{
+				position: absolute;
+				height: inherit;
+				width: 100%;
+				z-index: 2;
+				.row {
+					height: 100%;
+					text-align: center;
+					.inner-row {
+						min-width: 100%;
+						@include vertical-align;
+							h1 {
+								@include playfair-italic;
+								margin-bottom: 0px !important;
+								font-size: 2.5rem;
+								line-height: 1.2em;
+								color: #fff;
+							}
+					}
+				}
+			}
+
+			.color-overlay {
+			    position: absolute;
+			    z-index: 1;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    background: #4b5966;
+			    opacity: 0.8;
+			}
+
+			.video-holder {
+				display: none;
+			}
+	}
+
+.location-holder {
+	background-color: #fff;
+	text-align: center;
+	padding: 3.5rem 0 3.3rem 0;
+		.row {
+
+				h1 {
+					@include baskerville-regular;
+					font-size: 1.3rem;
+					padding-bottom: 25px;
+				}
+
+		}
+}
+
+.info-bg {
+	background-color: #F7F7F7;
+	padding: 5em 0em 8em 0em;
+		.row {
+			height: inherit;
+			.service-times {
+				padding-bottom: 4em;
+				text-align: center;
+				ul {
+
+					li {
+
+						h1 {
+							@include baskerville-regular;
+							font-size: 1.4rem;
+						}
+
+						h2 {
+							@include baskerville-regular;
+							font-size: 1.1rem;
+						}
+
+						hr {
+							background-color: $sanlo-gold;
+							max-width: 2.5em;
+							margin-top: 0.8em;
+							margin-bottom: 0.8em;
+							display: block;
+							height: 2px;
+							border: 0;
+						}
+					}
+				}
+
+				ul:last-child {
+					padding-top: 5em;
+				}
+			}
+
+			.divider {
+				display: none;
+			}
+
+			.sermon-series {
+				text-align: center;
+				ul {
+
+					li {
+
+						&:last-child {
+							color: $sanlo-gold;
+						}
+
+						h1 {
+							@include baskerville-regular;
+							font-size: 1.4rem;
+						}
+
+						hr {
+							background-color: $sanlo-gold;
+							max-width: 2.5em;
+							margin-top: 0.8em;
+							margin-bottom: 0.8em;
+							display: block;
+							height: 2px;
+							border: 0;
+						}
+					}
+				}
+			}
+		}
+}
+
+.events-bg {
+	background-color: #fff;
+	height: 70vh;
+		.events-holder {
+
+				h1 {
+					@include baskerville-regular;
+					font-size: 1.4rem;
+				}
+		}
+}
+
+// Footer
+
+.footer-bg {
+	background-color: $sanlo-navy;
+	height: 25vh;
+
+		.row {
+			@include vertical-align;
+				.info-footer-holder {
+					text-align: center;
+					color: #fff;
+						li {
+
+							h1 {
+								@include baskerville-regular;
+								font-size: 1.15rem;
+								padding-bottom: 8px;
+							}
+
+							a {
+								@include baskerville-regular;
+								padding: 3px 0px 3px 0px;
+								font-size: 1rem;
+								color: #fff;
+							}
+
+							.number {
+								padding-right: 15px;
+								border-right: 1px solid $sanlo-gold;
+							}
+
+							.email {
+								padding-left: 10px;
+							}
+						}
+				}
+		}
+}
+
+// About Section Globals
+
+.about-hero {
+	padding-top: 4em;
+	background-color: #f2f2f2;
+	height: 60vh;
+		.row {
+			@include vertical-align;
+			text-align: center;
+				h1 {
+					@include playfair-italic;
+					color: $sanlo-navy;
+					font-size: 2.5em;
+				}
+
+				h2 {
+					@include pathway-gothic;
+					text-transform: uppercase;
+					padding-top: 5px;
+					color: $sanlo-gold;
+					font-size: 1.5em;
+				}
+		}
+}
+
+.about-nav-bg {
+	display: none;
+}
+
+.about-section-bg {
+	text-align: center;
+	padding: 1em 0em 9em 0em;
+	background-color: #fff;
+		.about-section {
+			padding-top: 2.8em;
+				h1 {
+					@include playfair-italic;
+					font-size: 2.2rem;
+					color: $sanlo-navy;
+				}
+
+				h2 {
+					@include pathway-gothic;
+					text-transform: uppercase;
+					font-size: 1.3rem;
+					color: $sanlo-gold;
+					padding-bottom: 0.5em;
+				}
+
+				h3 {
+					@include pathway-gothic;
+					text-transform: uppercase;
+					font-size: 1.6rem;
+					color: $sanlo-gold;
+					padding: 1em 0em 0.5em 0em;
+				}
+
+				p {
+					@include baskerville-regular;
+					color: $sanlo-default;
+					line-height: 1.5em;
+					padding-top: 1em;
+					font-size: 1rem;
+				}
+
+				.expect-p {
+					@include baskerville-regular;
+					color: $sanlo-default;
+					line-height: 1.5em;
+					font-size: 1rem;
+					padding-top: 0px;
+				}
+		}
+}
+
+// Purpose Page
+
+.sanlo-purpose-holder {
+	text-align: center;
+		.sanlo-purpose {
+			padding-top: 8em;
+
+				img {
+					height: auto;
+					width: 100%;
+				}
+		}
+}
+
+// Beliefs Page
+
+.trinity-holder {
+	display: flex;
+	flex-direction: column;
+	padding: 0.5em 0em 0.5em 0em;
+		.trinity-number {
+			@include playfair-regular;
+			font-size: 3em;
+			color: #D9D9D9;
+			padding-right: 15px;
+		}
+
+		.one {
+			padding-left: 2px;
+		}
+
+}
+
+// Staff Page
+
+.staff-section-bg {
+	padding: 0em 0em 7em 0em;
+	background-color: #fff;
+		.row {
+			padding-top: 3em;
+			.staff-profile-holder {
+				text-align: center;
+				padding-bottom: 2em;
+					.staff-picture {
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-color: #f2f2f2;
+						margin-bottom: 0.5em;
+						display: inline-block;
+						height: 10em;
+						width: 100%;
+						overflow: hidden;
+					}
+
+					h1 {
+						@include baskerville-regular;
+						font-size: 1.3em;
+						color: $sanlo-navy;
+					}
+
+					h2 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						font-size: 1.2em;
+						color: $sanlo-gold;
+
+					}
+			}
+		}
+}
+
+	// News Blog Page
+
+	.news-section-bg {
+		padding: 4em 0em 5em 0em;
+		background-color: #fff;
+			.news-section {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+					h1 {
+						@include playfair-italic;
+						font-size: 2.5rem;
+						color: $sanlo-navy;
+						text-align: center;
+						line-height: 1.1em;
+						margin-bottom: 0.1em;
+					}
+
+					h2 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						font-size: 1.3rem;
+						color: $sanlo-gold;
+						padding-bottom: 0.5em;
+						display: inline-block;
+					}
+
+					h3 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						font-size: 1.6rem;
+						color: $sanlo-gold;
+						padding: 1em 0em 0.5em 0em;
+					}
+
+					.see-all {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						font-size: 1.3rem;
+						color: $sanlo-default;
+						display: none;
+						align-self: flex-end;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+			}
+	}
+
+	.anouncement-content {
+		margin: 1.4em 0em 4em 0em;
+		background-clip: padding-box;
+			.anouncement-block {
+				background-color: #FAFAFA;
+				background-clip: content-box;
+				margin: 0.2em 0 0.2em 0;
+				justify-content: space-between;
+				align-items: center;
+				flex-direction: row;
+				display: flex;
+				flex-wrap: wrap;
+				height: 4em;
+				transition: background-color 0.5s;
+				&:hover {
+					background-color: #f0f0f0;
+					transition: background-color 0.5s;
+				}
+					h1 {
+						@include baskerville-regular;
+						color: $sanlo-navy;
+						padding-left: 1.5em;
+						font-size: 1.1em;
+						text-overflow: ellipsis;
+					}
+					h2 {
+						@include pathway-gothic;
+						color: $sanlo-gold;
+						font-size: 1.25em;
+						align-self: center;
+						padding-right: 1.5em;
+						
+					}
+			}
+
+			.button-holder {
+				padding: 2.5em 0em 1em 0em;
+			}
+	}
+
+	.button-holder {
+		display: flex;
+		justify-content: center;
+	}
+
+	.newsletter-content {
+		margin: 1.4em 0em 0em 0em;
+			.newsletter-block {
+				display: inline-block;
+				padding-bottom: 2em;
+				&:hover > h1 {
+					color: $sanlo-gold;
+					text-decoration: underline;
+				} 
+				&:hover > h2 {
+					color: $sanlo-gold;
+					text-decoration: underline;
+				}
+				.newsletter-img {
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-color: #f2f2f2;
+					overflow: hidden;
+					height: 13em;
+				}
+			}
+			
+			h1 {
+				@include baskerville-regular;
+				color: $sanlo-navy;
+				padding-top: 0.5em;
+				font-size: 1.3em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			h2 {
+				@include pathway-gothic;
+				text-transform: uppercase;
+				color: $sanlo-gold;
+				font-size: 1.25em;
+			}
+
+			.button-holder {
+				padding: 2.5em 0em 0em 0em;
+			}
+	}
+
+
+	// Events 
+
+	
+
+
+
+

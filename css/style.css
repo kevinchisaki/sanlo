@@ -1,0 +1,1033 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  /* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #f15a22;
+  color: #fff;
+  text-shadow: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+::selection {
+  background: #E6F0F8;
+  color: #818181; }
+
+::-moz-selection {
+  background: #E6F0F8;
+  color: #818181; }
+
+body {
+  background-color: #333E48;
+  color: #4D4D4D; }
+
+.sanlo-button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  padding: 15px 30px 15px 30px;
+  display: inline-block;
+  border: 1.8px solid #DAA25A;
+  color: #DAA25A;
+  transition: background 0.5s, color 0.5s; }
+  .sanlo-button:hover {
+    background-color: #DAA25A;
+    color: #fff;
+    transition: background 0.5s, color 0.5s; }
+
+.menu-button {
+  position: fixed;
+  z-index: 999;
+  top: 5px;
+  right: 0px; }
+
+.main-nav-bg {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  padding: 0.5em 0em 0.8em 0em;
+  z-index: 100; }
+  .main-nav-bg .sanlo-logo a {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+    color: #333E48;
+    font-size: 2em;
+    margin-top: 0px;
+    transition: background 0.5s, color 0.5s; }
+    .main-nav-bg .sanlo-logo a:hover {
+      color: #DAA25A;
+      transition: background 0.5s, color 0.5s; }
+  .main-nav-bg .nav-link-holder {
+    display: none; }
+
+.mobile-nav-panel {
+  background-color: rgba(255, 255, 255, 0.97);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  opacity: 0;
+  z-index: -100;
+  height: 100vh;
+  width: 100%;
+  transition: opacity 0.5s;
+  transition-timing-function: ease; }
+  .mobile-nav-panel .mobile-nav-links {
+    text-align: center;
+    margin-top: -5em;
+    opacity: 0;
+    transition: margin 0.5s, opacity 0.5s;
+    transition-timing-function: ease; }
+    .mobile-nav-panel .mobile-nav-links li {
+      margin: 1em 0em 1em 0em; }
+      .mobile-nav-panel .mobile-nav-links li a {
+        display: block;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #DAA25A;
+        font-size: 2em;
+        transition: all 0.5s ease; }
+      .mobile-nav-panel .mobile-nav-links li .down-arrow {
+        background-image: url("../img/arrow-down.svg");
+        background-repeat: no-repeat;
+        display: none;
+        height: 9px;
+        width: 14px; }
+      .mobile-nav-panel .mobile-nav-links li .down-arrow-ministries {
+        background-image: url("../img/arrow-down.svg");
+        background-repeat: no-repeat;
+        display: none;
+        height: 9px;
+        width: 14px; }
+      .mobile-nav-panel .mobile-nav-links li .mobile-sub-nav {
+        margin: 0; }
+        .mobile-nav-panel .mobile-nav-links li .mobile-sub-nav a {
+          font-size: 1.5em;
+          color: #CBCBCB; }
+
+.arrow-show {
+  display: inline-block !important; }
+
+.show-panel {
+  z-index: 105;
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-timing-function: ease; }
+
+.show-nav {
+  margin-top: 0em !important;
+  opacity: 1 !important;
+  transition: margin 0.5s, opacity 0.5s;
+  transition-timing-function: ease; }
+
+.home-hero {
+  background: url(../img/sanlo-home.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  height: 70vh;
+  z-index: -101;
+  padding-top: 1.7em; }
+  .home-hero .welcome-container {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    z-index: 2; }
+    .home-hero .welcome-container .row {
+      height: 100%;
+      text-align: center; }
+      .home-hero .welcome-container .row .inner-row {
+        min-width: 100%;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .home-hero .welcome-container .row .inner-row h1 {
+          font-family: 'Playfair Display', serif;
+          font-style: italic;
+          font-weight: 400;
+          margin-bottom: 0px !important;
+          font-size: 2.5rem;
+          line-height: 1.2em;
+          color: #fff; }
+  .home-hero .color-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4b5966;
+    opacity: 0.8; }
+  .home-hero .video-holder {
+    display: none; }
+
+.location-holder {
+  background-color: #fff;
+  text-align: center;
+  padding: 3.5rem 0 3.3rem 0; }
+  .location-holder .row h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-bottom: 25px; }
+
+.info-bg {
+  background-color: #F7F7F7;
+  padding: 5em 0em 8em 0em; }
+  .info-bg .row {
+    height: inherit; }
+    .info-bg .row .service-times {
+      padding-bottom: 4em;
+      text-align: center; }
+      .info-bg .row .service-times ul li h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem; }
+      .info-bg .row .service-times ul li h2 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1rem; }
+      .info-bg .row .service-times ul li hr {
+        background-color: #DAA25A;
+        max-width: 2.5em;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        display: block;
+        height: 2px;
+        border: 0; }
+      .info-bg .row .service-times ul:last-child {
+        padding-top: 5em; }
+    .info-bg .row .divider {
+      display: none; }
+    .info-bg .row .sermon-series {
+      text-align: center; }
+      .info-bg .row .sermon-series ul li:last-child {
+        color: #DAA25A; }
+      .info-bg .row .sermon-series ul li h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem; }
+      .info-bg .row .sermon-series ul li hr {
+        background-color: #DAA25A;
+        max-width: 2.5em;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        display: block;
+        height: 2px;
+        border: 0; }
+
+.events-bg {
+  background-color: #fff;
+  height: 70vh; }
+  .events-bg .events-holder h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem; }
+
+.footer-bg {
+  background-color: #333E48;
+  height: 25vh; }
+  .footer-bg .row {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .footer-bg .row .info-footer-holder {
+      text-align: center;
+      color: #fff; }
+      .footer-bg .row .info-footer-holder li h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.15rem;
+        padding-bottom: 8px; }
+      .footer-bg .row .info-footer-holder li a {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        padding: 3px 0px 3px 0px;
+        font-size: 1rem;
+        color: #fff; }
+      .footer-bg .row .info-footer-holder li .number {
+        padding-right: 15px;
+        border-right: 1px solid #DAA25A; }
+      .footer-bg .row .info-footer-holder li .email {
+        padding-left: 10px; }
+
+.about-hero {
+  padding-top: 4em;
+  background-color: #f2f2f2;
+  height: 60vh; }
+  .about-hero .row {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center; }
+    .about-hero .row h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      color: #333E48;
+      font-size: 2.5em; }
+    .about-hero .row h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-top: 5px;
+      color: #DAA25A;
+      font-size: 1.5em; }
+
+.about-nav-bg {
+  display: none; }
+
+.about-section-bg {
+  text-align: center;
+  padding: 1em 0em 9em 0em;
+  background-color: #fff; }
+  .about-section-bg .about-section {
+    padding-top: 2.8em; }
+    .about-section-bg .about-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 2.2rem;
+      color: #333E48; }
+    .about-section-bg .about-section h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: #DAA25A;
+      padding-bottom: 0.5em; }
+    .about-section-bg .about-section h3 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      color: #DAA25A;
+      padding: 1em 0em 0.5em 0em; }
+    .about-section-bg .about-section p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #818181;
+      line-height: 1.5em;
+      padding-top: 1em;
+      font-size: 1rem; }
+    .about-section-bg .about-section .expect-p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #818181;
+      line-height: 1.5em;
+      font-size: 1rem;
+      padding-top: 0px; }
+
+.sanlo-purpose-holder {
+  text-align: center; }
+  .sanlo-purpose-holder .sanlo-purpose {
+    padding-top: 8em; }
+    .sanlo-purpose-holder .sanlo-purpose img {
+      height: auto;
+      width: 100%; }
+
+.trinity-holder {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0em 0.5em 0em; }
+  .trinity-holder .trinity-number {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    color: #D9D9D9;
+    padding-right: 15px; }
+  .trinity-holder .one {
+    padding-left: 2px; }
+
+.staff-section-bg {
+  padding: 0em 0em 7em 0em;
+  background-color: #fff; }
+  .staff-section-bg .row {
+    padding-top: 3em; }
+    .staff-section-bg .row .staff-profile-holder {
+      text-align: center;
+      padding-bottom: 2em; }
+      .staff-section-bg .row .staff-profile-holder .staff-picture {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #f2f2f2;
+        margin-bottom: 0.5em;
+        display: inline-block;
+        height: 10em;
+        width: 100%;
+        overflow: hidden; }
+      .staff-section-bg .row .staff-profile-holder h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3em;
+        color: #333E48; }
+      .staff-section-bg .row .staff-profile-holder h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #DAA25A; }
+
+.news-section-bg {
+  padding: 4em 0em 5em 0em;
+  background-color: #fff; }
+  .news-section-bg .news-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .news-section-bg .news-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 2.5rem;
+      color: #333E48;
+      text-align: center;
+      line-height: 1.1em;
+      margin-bottom: 0.1em; }
+    .news-section-bg .news-section h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: #DAA25A;
+      padding-bottom: 0.5em;
+      display: inline-block; }
+    .news-section-bg .news-section h3 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      color: #DAA25A;
+      padding: 1em 0em 0.5em 0em; }
+    .news-section-bg .news-section .see-all {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: #818181;
+      display: none;
+      align-self: flex-end; }
+      .news-section-bg .news-section .see-all:hover {
+        text-decoration: underline; }
+
+.anouncement-content {
+  margin: 1.4em 0em 4em 0em;
+  background-clip: padding-box; }
+  .anouncement-content .anouncement-block {
+    background-color: #FAFAFA;
+    background-clip: content-box;
+    margin: 0.2em 0 0.2em 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    height: 4em;
+    transition: background-color 0.5s; }
+    .anouncement-content .anouncement-block:hover {
+      background-color: #f0f0f0;
+      transition: background-color 0.5s; }
+    .anouncement-content .anouncement-block h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #333E48;
+      padding-left: 1.5em;
+      font-size: 1.1em;
+      text-overflow: ellipsis; }
+    .anouncement-content .anouncement-block h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #DAA25A;
+      font-size: 1.25em;
+      align-self: center;
+      padding-right: 1.5em; }
+  .anouncement-content .button-holder {
+    padding: 2.5em 0em 1em 0em; }
+
+.button-holder {
+  display: flex;
+  justify-content: center; }
+
+.newsletter-content {
+  margin: 1.4em 0em 0em 0em; }
+  .newsletter-content .newsletter-block {
+    display: inline-block;
+    padding-bottom: 2em; }
+    .newsletter-content .newsletter-block:hover > h1 {
+      color: #DAA25A;
+      text-decoration: underline; }
+    .newsletter-content .newsletter-block:hover > h2 {
+      color: #DAA25A;
+      text-decoration: underline; }
+    .newsletter-content .newsletter-block .newsletter-img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #f2f2f2;
+      overflow: hidden;
+      height: 13em; }
+  .newsletter-content h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #333E48;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .newsletter-content h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #DAA25A;
+    font-size: 1.25em; }
+  .newsletter-content .button-holder {
+    padding: 2.5em 0em 0em 0em; }
+
+@media screen and (min-width: 64em) {
+  .break-hide {
+    display: none; }
+
+  .menu-button {
+    display: none; }
+
+  .main-nav-bg {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 105;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+    padding: 0; }
+    .main-nav-bg .sanlo-logo a {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      display: inline-block;
+      color: #333E48;
+      font-size: 2.3em;
+      margin-top: 8px;
+      transition: background 0.5s, color 0.5s; }
+      .main-nav-bg .sanlo-logo a:hover {
+        color: #DAA25A;
+        transition: background 0.5s, color 0.5s; }
+    .main-nav-bg .menu-button {
+      display: none; }
+    .main-nav-bg .nav-link-holder {
+      display: block;
+      text-align: right; }
+      .main-nav-bg .nav-link-holder .main-nav-links li {
+        display: inline-block; }
+        .main-nav-bg .nav-link-holder .main-nav-links li .sub-nav-panel {
+          background-color: #B9C4CE;
+          padding: 1em 0em 1em 0em;
+          position: absolute;
+          text-align: center;
+          display: none;
+          width: 100%;
+          margin-left: 0;
+          left: 0; }
+          .main-nav-bg .nav-link-holder .main-nav-links li .sub-nav-panel a {
+            color: rgba(255, 255, 255, 0.6); }
+            .main-nav-bg .nav-link-holder .main-nav-links li .sub-nav-panel a:hover {
+              color: #fff;
+              transition: color 0.2s; }
+        .main-nav-bg .nav-link-holder .main-nav-links li a {
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          display: inline-block;
+          text-transform: uppercase;
+          letter-spacing: 0.10em;
+          font-size: 1.3rem;
+          color: #BFBFBF;
+          transition: color 0.2s;
+          padding: 1.5rem 0rem 1.5rem 2rem; }
+          .main-nav-bg .nav-link-holder .main-nav-links li a:hover {
+            color: #DAA25A;
+            transition: color 0.2s; }
+          .main-nav-bg .nav-link-holder .main-nav-links li a span {
+            position: absolute;
+            color: #BFBFBF;
+            display: inline-block;
+            font-size: 0.8em;
+            vertical-align: text-top;
+            padding-left: 5px;
+            padding-top: 5px; }
+        .main-nav-bg .nav-link-holder .main-nav-links li .nav-selected {
+          color: #DAA25A !important; }
+
+  #about-link {
+    padding-right: 15px; }
+
+  #ministries-link {
+    padding-right: 15px; }
+
+  .show-drop {
+    display: block !important; }
+
+  .mobile-nav-panel {
+    display: none; }
+
+  .home-hero {
+    position: relative;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    height: 90vh;
+    z-index: -101;
+    padding-top: 0; }
+    .home-hero .welcome-container {
+      position: absolute;
+      height: inherit;
+      width: 100%;
+      z-index: 2; }
+      .home-hero .welcome-container .row {
+        height: 100%;
+        text-align: left; }
+        .home-hero .welcome-container .row .inner-row {
+          min-width: 100%;
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          .home-hero .welcome-container .row .inner-row h1 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 0px !important;
+            font-size: 4rem;
+            line-height: 1.2em;
+            color: #fff; }
+    .home-hero .color-overlay {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #4b5966;
+      opacity: 0.4; }
+    .home-hero .video-holder {
+      position: absolute;
+      display: block;
+      height: 100vh;
+      max-height: 100vh;
+      z-index: -100; }
+      .home-hero .video-holder .sanlo-loop {
+        object-fit: cover;
+        min-height: 300px;
+        max-height: 100vh;
+        display: block;
+        height: 100vh;
+        width: 100%; }
+
+  .location-holder .row br {
+    display: none; }
+
+  .info-bg {
+    background-color: #F7F7F7;
+    height: 60vh;
+    padding: 0; }
+    .info-bg .row {
+      height: inherit; }
+      .info-bg .row .service-times {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 0; }
+        .info-bg .row .service-times ul li h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.4rem; }
+        .info-bg .row .service-times ul li h2 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.1rem; }
+        .info-bg .row .service-times ul li hr {
+          background-color: #DAA25A;
+          max-width: 2.5em;
+          margin-top: 0.8em;
+          margin-bottom: 0.8em;
+          display: block;
+          height: 2px;
+          border: 0; }
+        .info-bg .row .service-times ul:last-child {
+          padding-top: 40px; }
+      .info-bg .row .divider {
+        display: inline-block;
+        background-color: #DDDDDD;
+        border-bottom: 3.8em solid #f7f7f7;
+        border-top: 3.8em solid #f7f7f7;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        height: inherit;
+        width: 2px;
+        left: 0;
+        right: 0; }
+      .info-bg .row .sermon-series {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 0; }
+        .info-bg .row .sermon-series ul li:last-child {
+          color: #DAA25A; }
+        .info-bg .row .sermon-series ul li h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.4rem; }
+        .info-bg .row .sermon-series ul li hr {
+          background-color: #DAA25A;
+          max-width: 2.5em;
+          margin-top: 0.8em;
+          margin-bottom: 0.8em;
+          display: block;
+          height: 2px;
+          border: 0; }
+
+  .footer-bg {
+    background-color: #333E48;
+    height: 25vh; }
+    .footer-bg .row {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .footer-bg .row .info-footer-holder {
+        text-align: left;
+        color: #fff; }
+        .footer-bg .row .info-footer-holder li h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.15rem;
+          padding-bottom: 8px; }
+        .footer-bg .row .info-footer-holder li a {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          padding: 3px 0px 3px 0px;
+          font-size: 1rem;
+          color: #fff; }
+        .footer-bg .row .info-footer-holder li .number {
+          padding-right: 15px;
+          border-right: 1px solid #DAA25A; }
+        .footer-bg .row .info-footer-holder li .email {
+          padding-left: 10px; }
+
+  .about-hero {
+    padding-top: 4em;
+    background-color: #f2f2f2;
+    height: 50vh; }
+    .about-hero .row {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: center; }
+      .about-hero .row h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 400;
+        color: #333E48;
+        font-size: 3em; }
+      .about-hero .row h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-top: 5px;
+        color: #DAA25A;
+        font-size: 1.5em; }
+
+  .about-nav-bg {
+    display: block;
+    background-color: #333E48; }
+    .about-nav-bg .about-nav-links li {
+      display: inline-block;
+      padding: 1.5rem 2em 1.5rem 0rem; }
+      .about-nav-bg .about-nav-links li a {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.10em;
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.4);
+        transition: color 0.2s; }
+        .about-nav-bg .about-nav-links li a:hover {
+          color: #fff;
+          transition: color 0.2s; }
+      .about-nav-bg .about-nav-links li .about-selected {
+        color: #fff; }
+
+  .about-section-bg {
+    padding: 4.2em 0em 9em 0em;
+    background-color: #fff;
+    text-align: left; }
+
+  .trinity-holder {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 0em 0.5em 0em; }
+    .trinity-holder .trinity-number {
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+      color: #D9D9D9;
+      padding-right: 15px;
+      margin-top: -0.25em; }
+    .trinity-holder .one {
+      padding-right: 20px; }
+
+  .staff-section-bg {
+    padding: 3em 0em 7em 0em;
+    background-color: #fff; }
+    .staff-section-bg .row {
+      padding-top: 3em; }
+      .staff-section-bg .row .staff-profile-holder {
+        text-align: center;
+        padding-bottom: 2em; }
+        .staff-section-bg .row .staff-profile-holder .staff-picture {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-color: #f2f2f2;
+          margin-bottom: 0.8em;
+          display: inline-block;
+          height: 16.5rem;
+          width: 100%;
+          overflow: hidden; }
+        .staff-section-bg .row .staff-profile-holder h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.3em;
+          color: #333E48; }
+        .staff-section-bg .row .staff-profile-holder h2 {
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 1.2em;
+          color: #DAA25A; }
+
+  .news-section-bg {
+    padding: 4em 0em 5em 0em;
+    background-color: #fff; }
+    .news-section-bg .row {
+      padding-bottom: 0.5em; }
+      .news-section-bg .row .news-section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row; }
+        .news-section-bg .row .news-section h1 {
+          font-family: 'Playfair Display', serif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 2.5rem;
+          color: #333E48; }
+        .news-section-bg .row .news-section h2 {
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          padding-bottom: 0px;
+          font-size: 1.3rem;
+          color: #DAA25A;
+          display: inline-block;
+          align-self: center; }
+        .news-section-bg .row .news-section h3 {
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          color: #DAA25A;
+          padding: 1em 0em 0.5em 0em; }
+        .news-section-bg .row .news-section .see-all {
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          color: #818181;
+          display: inline-block;
+          align-self: center; }
+          .news-section-bg .row .news-section .see-all:hover {
+            text-decoration: underline; }
+
+  .button-holder {
+    display: none; }
+
+  .anouncement-content {
+    margin: 1.4em 0em 4em 0em;
+    background-clip: padding-box; }
+    .anouncement-content .anouncement-block {
+      background-color: #FAFAFA;
+      background-clip: content-box;
+      margin: 0.2em 0 0.2em 0;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      display: flex;
+      height: 4em;
+      transition: background-color 0.5s; }
+      .anouncement-content .anouncement-block:hover {
+        background-color: #f0f0f0;
+        transition: background-color 0.5s; }
+      .anouncement-content .anouncement-block h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #333E48;
+        padding-left: 1.5em;
+        font-size: 1.1em; }
+      .anouncement-content .anouncement-block h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #DAA25A;
+        font-size: 1.25em;
+        align-self: center;
+        padding-right: 1.5em; }
+
+  .newsletter-content {
+    margin: 1.4em 0em 0em 0em; }
+    .newsletter-content .newsletter-block {
+      display: inline-block;
+      padding-bottom: 2em; }
+      .newsletter-content .newsletter-block:hover > h1 {
+        color: #DAA25A;
+        text-decoration: underline; }
+      .newsletter-content .newsletter-block:hover > h2 {
+        color: #DAA25A;
+        text-decoration: underline; }
+      .newsletter-content .newsletter-block .newsletter-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #f2f2f2;
+        overflow: hidden;
+        height: 13em; }
+    .newsletter-content h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #333E48;
+      padding-top: 0.5em;
+      font-size: 1.1em;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .newsletter-content h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #DAA25A;
+      font-size: 1.1em; } }

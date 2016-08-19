@@ -1,0 +1,571 @@
+// Desktop
+
+@media screen and (min-width: 64em) {
+
+	.break-hide {
+		display: none;
+	}
+
+	// Homepage
+
+	.menu-button {
+		display: none;
+		.hamburger-box {
+
+			.hamburger-inner{
+
+			}
+		}
+	}
+
+	// Main Nav
+
+	.main-nav-bg {
+		background-color: #fff;
+		width: 100%;
+		position: fixed;
+		z-index: 105;
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+		padding: 0;
+		.sanlo-logo {
+
+			a {
+				@include playfair-italic;
+				display: inline-block;
+				color: $sanlo-navy;
+				font-size: 2.3em;
+				margin-top: 8px;
+				transition: background 0.5s, color 0.5s;
+				&:hover {
+					color: $sanlo-gold;
+					transition: background 0.5s, color 0.5s;
+				}
+			}
+		}
+
+		.menu-button {
+			display: none;
+		}
+
+		.nav-link-holder {
+			display: block;
+			text-align: right;
+			.main-nav-links {
+
+				li {
+					display: inline-block;
+					.sub-nav-panel {
+						background-color: $sanlo-lightblue;
+						padding: 1em 0em 1em 0em;
+						position: absolute;
+						text-align: center;
+						display: none;
+						width: 100%;
+						margin-left: 0;
+						left: 0;
+							a {
+								color: rgba(255,255,255,0.6);
+								&:hover {
+									color: #fff;
+									transition: color 0.2s;
+								}
+							}
+					}
+
+					a {
+						@include pathway-gothic;
+						display: inline-block;
+						text-transform: uppercase;
+						letter-spacing: 0.10em;
+						font-size: 1.3rem;
+						color: #BFBFBF;
+						transition: color 0.2s;
+						padding: 1.5rem 0rem 1.5rem 2rem;
+						&:hover {
+							color: $sanlo-gold;
+							transition: color 0.2s;
+						}
+
+						span {
+							position: absolute;
+							color: #BFBFBF;
+							display: inline-block;
+							font-size: 0.8em;
+							vertical-align: text-top;
+							padding-left: 5px;
+							padding-top: 5px;
+						}
+					}
+
+					.nav-selected {
+						color: $sanlo-gold !important;
+					}
+				}
+			}
+		}
+	}
+
+	#about-link {
+		padding-right: 15px;
+	}
+
+	#ministries-link {
+		padding-right: 15px;
+	}
+
+	.show-drop {
+		display: block !important;
+	}
+
+	.mobile-nav-panel {
+		display: none;
+	}
+
+	.home-hero {
+		position: relative;
+		background-color: #f2f2f2;
+		overflow: hidden;
+		height: 90vh;
+		z-index: -101;
+		padding-top: 0;
+			.welcome-container{
+				position: absolute;
+				height: inherit;
+				width: 100%;
+				z-index: 2;
+				.row {
+					height: 100%;
+					text-align: left;
+					.inner-row {
+						min-width: 100%;
+						@include vertical-align;
+							h1 {
+								@include playfair-italic;
+								margin-bottom: 0px !important;
+								font-size: 4rem;
+								line-height: 1.2em;
+								color: #fff;
+							}
+					}
+				}
+			}
+
+			.color-overlay {
+			    position: absolute;
+			    z-index: 1;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    background: #4b5966;
+			    opacity: 0.4;
+			}
+
+			.video-holder {
+				position: absolute;
+				display: block;
+			    height: 100vh;
+			    max-height: 100vh;
+			    z-index: -100;
+					.sanlo-loop {
+						object-fit: cover;
+					    min-height: 300px;
+					    max-height: 100vh;
+					    display: block;
+					    height: 100vh;
+					    width: 100%;
+					}
+			}
+	}
+
+	.location-holder {
+		
+			.row {
+
+					h1 {
+						
+					}
+
+					br {
+						display: none;
+					}
+
+			}
+	}
+
+	.info-bg {
+		background-color: #F7F7F7;
+		height: 60vh;
+		padding: 0;
+			.row {
+				height: inherit;
+				.service-times {
+					@include vertical-align;
+					text-align: center;
+					padding: 0;
+					ul {
+
+						li {
+
+							h1 {
+								@include baskerville-regular;
+								font-size: 1.4rem;
+							}
+
+							h2 {
+								@include baskerville-regular;
+								font-size: 1.1rem;
+							}
+
+							hr {
+								background-color: $sanlo-gold;
+								max-width: 2.5em;
+								margin-top: 0.8em;
+								margin-bottom: 0.8em;
+								display: block;
+								height: 2px;
+								border: 0;
+							}
+						}
+					}
+
+					ul:last-child {
+						padding-top: 40px;
+					}
+				}
+
+				.divider {
+					display: inline-block;
+					background-color: #DDDDDD;
+					border-bottom: 3.8em solid #f7f7f7;
+					border-top: 3.8em solid #f7f7f7;
+					position: absolute;
+					margin-left: auto;
+					margin-right: auto;
+					height: inherit;
+					width: 2px;
+					left: 0;
+					right: 0;
+				}
+
+				.sermon-series {
+					@include vertical-align;
+					text-align: center;
+					padding: 0;
+					ul {
+
+						li {
+
+							&:last-child {
+								color: $sanlo-gold;
+							}
+
+							h1 {
+								@include baskerville-regular;
+								font-size: 1.4rem;
+							}
+
+							hr {
+								background-color: $sanlo-gold;
+								max-width: 2.5em;
+								margin-top: 0.8em;
+								margin-bottom: 0.8em;
+								display: block;
+								height: 2px;
+								border: 0;
+							}
+						}
+					}
+				}
+			}
+	}
+
+	// Footer
+
+	.footer-bg {
+		background-color: $sanlo-navy;
+		height: 25vh;
+
+			.row {
+				@include vertical-align;
+					.info-footer-holder {
+						text-align: left;
+						color: #fff;
+							li {
+
+								h1 {
+									@include baskerville-regular;
+									font-size: 1.15rem;
+									padding-bottom: 8px;
+								}
+
+								a {
+									@include baskerville-regular;
+									padding: 3px 0px 3px 0px;
+									font-size: 1rem;
+									color: #fff;
+								}
+
+								.number {
+									padding-right: 15px;
+									border-right: 1px solid $sanlo-gold;
+								}
+
+								.email {
+									padding-left: 10px;
+								}
+							}
+					}
+			}
+	}
+
+	// About Section Globals
+
+	.about-hero {
+		padding-top: 4em;
+		background-color: #f2f2f2;
+		height: 50vh;
+			.row {
+				@include vertical-align;
+				text-align: center;
+					h1 {
+						@include playfair-italic;
+						color: $sanlo-navy;
+						font-size: 3em;
+					}
+
+					h2 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						padding-top: 5px;
+						color: $sanlo-gold;
+						font-size: 1.5em;
+					}
+			}
+	}
+
+	.about-nav-bg {
+		display: block;
+		background-color: $sanlo-navy;
+			.about-nav-links {
+
+					li {
+						display: inline-block;
+						padding: 1.5rem 2em 1.5rem 0rem;
+						a {
+							@include pathway-gothic;
+							text-transform: uppercase;
+							letter-spacing: 0.10em;
+							font-size: 1.3rem;
+							color: rgba(255,255,255,0.4);
+							transition: color 0.2s;
+							&:hover {
+								color: #fff;
+								transition: color 0.2s;
+							}
+						}
+
+						.about-selected {
+							color: #fff;
+						}
+					}
+			}
+	}
+
+	.about-section-bg {
+		padding: 4.2em 0em 9em 0em;
+		background-color: #fff;
+		text-align: left;
+	}
+
+	// Beliefs Page
+
+	.trinity-holder {
+		display: flex;
+		flex-direction: row;
+		padding: 0.5em 0em 0.5em 0em;
+
+			.trinity-number {
+				@include playfair-regular;
+				font-size: 3em;
+				color: #D9D9D9;
+				padding-right: 15px;
+				margin-top: -0.25em;
+
+			}
+
+			.one {
+				padding-right: 20px;
+			}
+
+	}
+
+	// Staff Page
+
+	.staff-section-bg {
+		padding: 3em 0em 7em 0em;
+		background-color: #fff;
+			.row {
+				padding-top: 3em;
+				.staff-profile-holder {
+					text-align: center;
+					padding-bottom: 2em;
+						.staff-picture {
+							background-size: cover;
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-color: #f2f2f2;
+							margin-bottom: 0.8em;
+							display: inline-block;
+							height: 16.5rem;
+							width: 100%;
+							overflow: hidden;
+						}
+
+						h1 {
+							@include baskerville-regular;
+							font-size: 1.3em;
+							color: $sanlo-navy;
+						}
+
+						h2 {
+							@include pathway-gothic;
+							text-transform: uppercase;
+							font-size: 1.2em;
+							color: $sanlo-gold;
+
+						}
+				}
+			}
+	}
+
+	// News Blog Page
+
+	.news-section-bg {
+		padding: 4em 0em 5em 0em;
+		background-color: #fff;
+		.row {
+			padding-bottom: 0.5em;
+			.news-section {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+					h1 {
+						@include playfair-italic;
+						font-size: 2.5rem;
+						color: $sanlo-navy;
+					}
+
+					h2 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						padding-bottom: 0px;
+						font-size: 1.3rem;
+						color: $sanlo-gold;
+						display: inline-block;
+						align-self: center;
+					}
+
+					h3 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						font-size: 1.6rem;
+						color: $sanlo-gold;
+						padding: 1em 0em 0.5em 0em;
+					}
+
+					.see-all {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						font-size: 1.3rem;
+						color: $sanlo-default;
+						display: inline-block;
+						align-self: center;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+			}
+		}
+	}
+
+	.button-holder {
+		display: none;
+	}
+
+	.anouncement-content {
+		margin: 1.4em 0em 4em 0em;
+		background-clip: padding-box;
+			.anouncement-block {
+				background-color: #FAFAFA;
+				background-clip: content-box;
+				margin: 0.2em 0 0.2em 0;
+				justify-content: space-between;
+				align-items: center;
+				flex-direction: row;
+				display: flex;
+				height: 4em;
+				transition: background-color 0.5s;
+				&:hover {
+					background-color: #f0f0f0;
+					transition: background-color 0.5s;
+				}
+					h1 {
+						@include baskerville-regular;
+						color: $sanlo-navy;
+						padding-left: 1.5em;
+						font-size: 1.1em;
+					}
+					h2 {
+						@include pathway-gothic;
+						color: $sanlo-gold;
+						font-size: 1.25em;
+						align-self: center;
+						padding-right: 1.5em;
+						
+					}
+			}
+	}
+
+	.newsletter-content {
+		margin: 1.4em 0em 0em 0em;
+			.newsletter-block {
+				display: inline-block;
+				padding-bottom: 2em;
+				&:hover > h1 {
+					color: $sanlo-gold;
+					text-decoration: underline;
+				} 
+				&:hover > h2 {
+					color: $sanlo-gold;
+					text-decoration: underline;
+				}
+				.newsletter-img {
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-color: #f2f2f2;
+					overflow: hidden;
+					height: 13em;
+				}
+			}
+			
+			h1 {
+				@include baskerville-regular;
+				color: $sanlo-navy;
+				padding-top: 0.5em;
+				font-size: 1.1em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			h2 {
+				@include pathway-gothic;
+				text-transform: uppercase;
+				color: $sanlo-gold;
+				font-size: 1.1em;
+			}
+	}
+
+}
+
