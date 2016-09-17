@@ -18,6 +18,12 @@
 	font-weight: 400;
 }
 
+@mixin baskerville-italic(){
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
 @mixin playfair-regular(){
 	font-family: 'Playfair Display', serif;
 	font-style: normal;

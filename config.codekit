@@ -38,6 +38,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/loadingbar.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/loadingbar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -101,104 +110,148 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/arrow-down.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 194,
-		"inputAbbreviatedPath": "\/img\/arrow-down.png",
-		"outputAbbreviatedPath": "\/img\/arrow-down.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/arrow.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15384,
-		"inputAbbreviatedPath": "\/img\/arrow.png",
-		"outputAbbreviatedPath": "\/img\/arrow.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/arrow2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 205,
-		"inputAbbreviatedPath": "\/img\/arrow2x.png",
-		"outputAbbreviatedPath": "\/img\/arrow2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/arrow3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15220,
-		"inputAbbreviatedPath": "\/img\/arrow3.png",
-		"outputAbbreviatedPath": "\/img\/arrow3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/calendar.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 216204,
-		"inputAbbreviatedPath": "\/img\/calendar.jpg",
-		"outputAbbreviatedPath": "\/img\/calendar.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/IMG_2867.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6.36965e+06,
-		"inputAbbreviatedPath": "\/img\/IMG_2867.JPG",
-		"outputAbbreviatedPath": "\/img\/IMG_2867.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/sanlo-home.jpg": {
+	"\/img\/home\/sanlo-home.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.6461e+06,
-		"inputAbbreviatedPath": "\/img\/sanlo-home.jpg",
-		"outputAbbreviatedPath": "\/img\/sanlo-home.jpg",
+		"inputAbbreviatedPath": "\/img\/home\/sanlo-home.jpg",
+		"outputAbbreviatedPath": "\/img\/home\/sanlo-home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/sanlo-purpose.png": {
+	"\/img\/home\/sanlo-purpose-mobile.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 45436,
-		"inputAbbreviatedPath": "\/img\/sanlo-purpose.png",
-		"outputAbbreviatedPath": "\/img\/sanlo-purpose.png",
+		"initialSize": 142096,
+		"inputAbbreviatedPath": "\/img\/home\/sanlo-purpose-mobile.png",
+		"outputAbbreviatedPath": "\/img\/home\/sanlo-purpose-mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/slz-home.png": {
+	"\/img\/home\/sanlo-purpose.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 491631,
-		"inputAbbreviatedPath": "\/img\/slz-home.png",
-		"outputAbbreviatedPath": "\/img\/slz-home.png",
+		"initialSize": 98180,
+		"inputAbbreviatedPath": "\/img\/home\/sanlo-purpose.png",
+		"outputAbbreviatedPath": "\/img\/home\/sanlo-purpose.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
+		},
+	"\/img\/staff\/brian-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 189599,
+		"inputAbbreviatedPath": "\/img\/staff\/brian-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/brian-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/eric-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 241537,
+		"inputAbbreviatedPath": "\/img\/staff\/eric-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/eric-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/kathy-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 223527,
+		"inputAbbreviatedPath": "\/img\/staff\/kathy-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/kathy-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/rod-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 236463,
+		"inputAbbreviatedPath": "\/img\/staff\/rod-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/rod-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/scott-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 215090,
+		"inputAbbreviatedPath": "\/img\/staff\/scott-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/scott-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/sensei-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 212289,
+		"inputAbbreviatedPath": "\/img\/staff\/sensei-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/sensei-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/stan-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 187494,
+		"inputAbbreviatedPath": "\/img\/staff\/stan-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/stan-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/staff\/tomoko-profile_square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 163682,
+		"inputAbbreviatedPath": "\/img\/staff\/tomoko-profile_square.jpg",
+		"outputAbbreviatedPath": "\/img\/staff\/tomoko-profile_square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/vbs-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 193899,
+		"inputAbbreviatedPath": "\/img\/vbs-small.jpg",
+		"outputAbbreviatedPath": "\/img\/vbs-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/vbs.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 816886,
+		"inputAbbreviatedPath": "\/img\/vbs.jpg",
+		"outputAbbreviatedPath": "\/img\/vbs.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -215,6 +268,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/app.js",
 		"outputAbbreviatedPath": "\/js\/min\/app-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/build.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/build.js",
+		"outputAbbreviatedPath": "\/js\/min\/build-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -242,12 +306,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/jquery.fullPage.min.js": {
+	"\/js\/jquery.loadingbar.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/jquery.fullPage.min.js",
-		"outputAbbreviatedPath": "\/js\/min\/jquery.fullPage.min-min.js",
+		"inputAbbreviatedPath": "\/js\/jquery.loadingbar.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery.loadingbar-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -259,6 +323,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/app-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/build-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/build-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/build-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -306,6 +381,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/news-post.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/news-post.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/news.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -323,6 +407,27 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/scss\/css\/desktop.css": {
 		"fileType": 16,
@@ -463,6 +568,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/small-groups.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/small-groups.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/staff.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -477,6 +591,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/what-to-expect.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/youth-ministry.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/youth-ministry.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

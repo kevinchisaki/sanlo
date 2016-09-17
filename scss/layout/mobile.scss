@@ -27,9 +27,13 @@ body {
 	transition: background 0.5s, color 0.5s;
 	&:hover {
 		background-color: $sanlo-gold;
-		color: #fff;
+		color: #fff !important;
 		transition: background 0.5s, color 0.5s;
 	}
+}
+
+.ministry-button {
+	margin: 1.5em 0em 0em 0em;
 }
 
 // Homepage
@@ -52,15 +56,15 @@ body {
 	width: 100%;
 	position: fixed;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
-	padding: 0.5em 0em 0.8em 0em;
+	padding: 0.5em 0em 0.6em 0em;
 	z-index: 100;
 	.sanlo-logo {
 
 		a {
-			@include playfair-italic;
+			@include baskerville-regular;
 			display: inline-block;
 			color: $sanlo-navy;
-			font-size: 2em;
+			font-size: 1.1em;
 			margin-top: 0px;
 			transition: background 0.5s, color 0.5s;
 			&:hover {
@@ -105,14 +109,14 @@ body {
 						transition: all 0.5s ease;
 					}
 					.down-arrow {
-						background-image: url('../img/arrow-down.svg');
+						background-image: url('../img/home/arrow-down.svg');
 						background-repeat: no-repeat;
 						display: none;
 						height: 9px;
 						width: 14px;
 					}
 					.down-arrow-ministries {
-						background-image: url('../img/arrow-down.svg');
+						background-image: url('../img/home/arrow-down.svg');
 						background-repeat: no-repeat;
 						display: none;
 						height: 9px;
@@ -150,7 +154,7 @@ body {
 // Home Hero
 
 	.home-hero {
-		background: url(../img/sanlo-home.jpg) no-repeat; 
+		background: url(../img/home/sanlo-home.jpg) no-repeat; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -323,6 +327,11 @@ body {
 								padding: 3px 0px 3px 0px;
 								font-size: 1rem;
 								color: #fff;
+								transition: color 0.5s;
+								&:hover {
+									color: $sanlo-gold;
+									transition: color 0.5s;
+								}
 							}
 
 							.number {
@@ -410,22 +419,48 @@ body {
 					font-size: 1rem;
 					padding-top: 0px;
 				}
+
+				a {
+					color: $sanlo-gold;
+					transition: color 0.5s;
+						&:hover {
+							color: $sanlo-navy;
+							transition: color 0.5s;
+						}
+				}
+
+				ol {
+					@include baskerville-regular;
+					list-style-type: upper-roman;
+					color: $sanlo-default;
+					text-align: left;
+					font-size: 1rem;
+					line-height: 1.5em;
+					margin-left: 1.7em;
+						li {
+							padding-left: 0.2em;
+						}
+				}
 		}
 }
 
 // Purpose Page
 
-.sanlo-purpose-holder {
-	text-align: center;
-		.sanlo-purpose {
-			padding-top: 8em;
+	.sanlo-purpose-holder {
+		text-align: center;
+			.sanlo-purpose {
+				padding-top: 4em;
 
-				img {
-					height: auto;
-					width: 100%;
-				}
-		}
-}
+					.purpose-desktop {
+						display: none;
+					}
+
+					.purpose-mobile {
+						height: auto;
+						width: 50%;
+					}
+			}
+	}
 
 // Beliefs Page
 
@@ -449,7 +484,7 @@ body {
 // Staff Page
 
 .staff-section-bg {
-	padding: 0em 0em 7em 0em;
+	padding: 2em 0em 4em 0em;
 	background-color: #fff;
 		.row {
 			padding-top: 3em;
@@ -470,16 +505,22 @@ body {
 
 					h1 {
 						@include baskerville-regular;
-						font-size: 1.3em;
+						font-size: 1.2em;
 						color: $sanlo-navy;
 					}
 
 					h2 {
 						@include pathway-gothic;
 						text-transform: uppercase;
-						font-size: 1.2em;
+						font-size: 1.1em;
 						color: $sanlo-gold;
 
+					}
+
+					h3 {
+						@include sourcesans-regular;
+						font-size: 0.8em;
+						color: $sanlo-lightblue;
 					}
 			}
 		}
@@ -626,7 +667,85 @@ body {
 
 	// Events 
 
-	
+	.coming-soon {
+		background-color: #FAFAFA;
+		padding: 15em 0em 15em 0em;
+		text-align: center;
+		p {
+			@include pathway-gothic;
+			text-transform: uppercase;
+			font-size: 1.5em;
+		}
+	}
+
+
+	// Posts Pages
+
+	.post-holder {
+		
+	}
+
+	// Small Groups
+
+	.groups-title {
+		font-size: 1.8em !important;
+		margin-top: 1em;
+	}
+
+	.small-group-outer {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+			.small-group-holder {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+	}
+
+	.small-group-list {
+		@include sourcesans-regular;
+		display: inline-block;
+		line-height: 1.35em;
+		font-size: 1em;
+		color: $sanlo-default;
+		padding-top: 1.4em;
+			li {
+
+				&:first-child {
+					@include baskerville-regular;
+					color: $sanlo-navy;
+					font-size: 1.1em;
+				}
+			}
+	}
+
+	// Comingsoon
+
+	.coming-soon-page {
+		background-color: #f2f2f2;
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		flex-direction: row;
+			.coming-soon-text {
+				text-align: center;
+					h1 {
+						@include playfair-italic;
+						font-size: 2em;
+						color: $sanlo-default;
+					}
+
+					p {
+						color: $sanlo-gold;
+						padding-top: 4px;
+					}
+			}
+	}
 
 
 

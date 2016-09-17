@@ -87,8 +87,11 @@ body {
   transition: background 0.5s, color 0.5s; }
   .sanlo-button:hover {
     background-color: #DAA25A;
-    color: #fff;
+    color: #fff !important;
     transition: background 0.5s, color 0.5s; }
+
+.ministry-button {
+  margin: 1.5em 0em 0em 0em; }
 
 .menu-button {
   position: fixed;
@@ -101,15 +104,15 @@ body {
   width: 100%;
   position: fixed;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
-  padding: 0.5em 0em 0.8em 0em;
+  padding: 0.5em 0em 0.6em 0em;
   z-index: 100; }
   .main-nav-bg .sanlo-logo a {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
     font-weight: 400;
     display: inline-block;
     color: #333E48;
-    font-size: 2em;
+    font-size: 1.1em;
     margin-top: 0px;
     transition: background 0.5s, color 0.5s; }
     .main-nav-bg .sanlo-logo a:hover {
@@ -149,13 +152,13 @@ body {
         font-size: 2em;
         transition: all 0.5s ease; }
       .mobile-nav-panel .mobile-nav-links li .down-arrow {
-        background-image: url("../img/arrow-down.svg");
+        background-image: url("../img/home/arrow-down.svg");
         background-repeat: no-repeat;
         display: none;
         height: 9px;
         width: 14px; }
       .mobile-nav-panel .mobile-nav-links li .down-arrow-ministries {
-        background-image: url("../img/arrow-down.svg");
+        background-image: url("../img/home/arrow-down.svg");
         background-repeat: no-repeat;
         display: none;
         height: 9px;
@@ -182,7 +185,7 @@ body {
   transition-timing-function: ease; }
 
 .home-hero {
-  background: url(../img/sanlo-home.jpg) no-repeat;
+  background: url(../img/home/sanlo-home.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -320,7 +323,11 @@ body {
         font-weight: 400;
         padding: 3px 0px 3px 0px;
         font-size: 1rem;
-        color: #fff; }
+        color: #fff;
+        transition: color 0.5s; }
+        .footer-bg .row .info-footer-holder li a:hover {
+          color: #DAA25A;
+          transition: color 0.5s; }
       .footer-bg .row .info-footer-holder li .number {
         padding-right: 15px;
         border-right: 1px solid #DAA25A; }
@@ -400,14 +407,34 @@ body {
       line-height: 1.5em;
       font-size: 1rem;
       padding-top: 0px; }
+    .about-section-bg .about-section a {
+      color: #DAA25A;
+      transition: color 0.5s; }
+      .about-section-bg .about-section a:hover {
+        color: #333E48;
+        transition: color 0.5s; }
+    .about-section-bg .about-section ol {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      list-style-type: upper-roman;
+      color: #818181;
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.5em;
+      margin-left: 1.7em; }
+      .about-section-bg .about-section ol li {
+        padding-left: 0.2em; }
 
 .sanlo-purpose-holder {
   text-align: center; }
   .sanlo-purpose-holder .sanlo-purpose {
-    padding-top: 8em; }
-    .sanlo-purpose-holder .sanlo-purpose img {
+    padding-top: 4em; }
+    .sanlo-purpose-holder .sanlo-purpose .purpose-desktop {
+      display: none; }
+    .sanlo-purpose-holder .sanlo-purpose .purpose-mobile {
       height: auto;
-      width: 100%; }
+      width: 50%; }
 
 .trinity-holder {
   display: flex;
@@ -424,7 +451,7 @@ body {
     padding-left: 2px; }
 
 .staff-section-bg {
-  padding: 0em 0em 7em 0em;
+  padding: 2em 0em 4em 0em;
   background-color: #fff; }
   .staff-section-bg .row {
     padding-top: 3em; }
@@ -445,15 +472,21 @@ body {
         font-family: 'Libre Baskerville', serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: #333E48; }
       .staff-section-bg .row .staff-profile-holder h2 {
         font-family: 'Pathway Gothic One', sans-serif;
         font-style: normal;
         font-weight: 400;
         text-transform: uppercase;
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: #DAA25A; }
+      .staff-section-bg .row .staff-profile-holder h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        color: #B9C4CE; }
 
 .news-section-bg {
   padding: 4em 0em 5em 0em;
@@ -577,6 +610,68 @@ body {
   .newsletter-content .button-holder {
     padding: 2.5em 0em 0em 0em; }
 
+.coming-soon {
+  background-color: #FAFAFA;
+  padding: 15em 0em 15em 0em;
+  text-align: center; }
+  .coming-soon p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5em; }
+
+.groups-title {
+  font-size: 1.8em !important;
+  margin-top: 1em; }
+
+.small-group-outer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+  .small-group-outer .small-group-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+
+.small-group-list {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 1.35em;
+  font-size: 1em;
+  color: #818181;
+  padding-top: 1.4em; }
+  .small-group-list li:first-child {
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #333E48;
+    font-size: 1.1em; }
+
+.coming-soon-page {
+  background-color: #f2f2f2;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .coming-soon-page .coming-soon-text {
+    text-align: center; }
+    .coming-soon-page .coming-soon-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 2em;
+      color: #818181; }
+    .coming-soon-page .coming-soon-text p {
+      color: #DAA25A;
+      padding-top: 4px; }
+
 @media screen and (min-width: 64em) {
   .break-hide {
     display: none; }
@@ -592,13 +687,13 @@ body {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
     padding: 0; }
     .main-nav-bg .sanlo-logo a {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
       font-weight: 400;
       display: inline-block;
       color: #333E48;
-      font-size: 2.3em;
-      margin-top: 8px;
+      font-size: 1.3em;
+      margin-top: 10px;
       transition: background 0.5s, color 0.5s; }
       .main-nav-bg .sanlo-logo a:hover {
         color: #DAA25A;
@@ -870,6 +965,17 @@ body {
     background-color: #fff;
     text-align: left; }
 
+  .sanlo-purpose-holder {
+    text-align: center; }
+    .sanlo-purpose-holder .sanlo-purpose {
+      padding-top: 8em; }
+      .sanlo-purpose-holder .sanlo-purpose .purpose-desktop {
+        display: block;
+        height: auto;
+        width: 100%; }
+      .sanlo-purpose-holder .sanlo-purpose .purpose-mobile {
+        display: none; }
+
   .trinity-holder {
     display: flex;
     flex-direction: row;
@@ -886,7 +992,7 @@ body {
       padding-right: 20px; }
 
   .staff-section-bg {
-    padding: 3em 0em 7em 0em;
+    padding: 3em 0em 5em 0em;
     background-color: #fff; }
     .staff-section-bg .row {
       padding-top: 3em; }
@@ -916,6 +1022,12 @@ body {
           text-transform: uppercase;
           font-size: 1.2em;
           color: #DAA25A; }
+        .staff-section-bg .row .staff-profile-holder h3 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1em;
+          color: #B9C4CE; }
 
   .news-section-bg {
     padding: 4em 0em 5em 0em;
@@ -1030,4 +1142,111 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       color: #DAA25A;
+      font-size: 1.1em; }
+
+  .post-nav-bg {
+    padding: 2.5em 2.5em 2.5em 2.5em;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: space-between; }
+    .post-nav-bg a {
+      text-transform: uppercase;
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5em;
+      color: #DAA25A;
+      transition: color 0.5s; }
+      .post-nav-bg a:hover {
+        color: #333E48;
+        transition: color 0.5s; }
+
+  .post-holder {
+    background-color: white;
+    padding-bottom: 6em; }
+    .post-holder .post-body-top {
+      padding: 6em 0em 3.5em 0em; }
+      .post-holder .post-body-top .post-title {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        text-align: center; }
+      .post-holder .post-body-top .post-date {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #DAA25A;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: center; }
+    .post-holder .post-body p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #818181;
+      padding: 0.7em 0em 0.7em 0em;
+      line-height: 1.8em;
+      font-size: 1.1em; }
+    .post-holder .post-body i {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: inherit; }
+    .post-holder .post-body a {
+      color: #DAA25A;
+      transition: color 0.5s; }
+      .post-holder .post-body a:hover {
+        color: #333E48;
+        transition: color 0.5s; }
+    .post-holder .post-body blockquote {
+      border-left: 5px solid #eaeff2;
+      margin: 15px 0px 15px 0px; }
+      .post-holder .post-body blockquote p {
+        font-family: 'Libre Baskerville', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.12em;
+        padding: 20px 35px 20px 35px; }
+    .post-holder .post-body hr {
+      background-color: #DAA25A;
+      border-bottom: 0;
+      padding: 0.1em;
+      display: block;
+      text-align: center;
+      max-width: 11%; }
+    .post-holder .post-body img {
+      display: block;
+      padding: 20px 0px 20px 0px;
+      margin: 0 auto; }
+
+  .groups-title {
+    font-size: 1.8em !important;
+    margin-top: 1em; }
+
+  .small-group-outer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .small-group-outer .small-group-holder {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-right: 5em; }
+
+  .small-group-list {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1.35em;
+    font-size: 1em;
+    color: #818181;
+    padding-top: 1.4em; }
+    .small-group-list li:first-child {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #333E48;
       font-size: 1.1em; } }
