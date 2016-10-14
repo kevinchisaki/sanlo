@@ -36,6 +36,22 @@ body {
 	margin: 1.5em 0em 0em 0em;
 }
 
+.unordered-list {
+  text-align: center;
+  @include baskerville-regular;
+  color: $sanlo-default;
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+
+.unordered-list-dashed {
+  text-align: center;
+  @include baskerville-regular;
+  color: $sanlo-default;
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+
 // Homepage
 
 .menu-button {
@@ -154,7 +170,7 @@ body {
 // Home Hero
 
 	.home-hero {
-		background: url(../img/home/sanlo-home.jpg) no-repeat; 
+		background: url(../img/home/sanlo-home.jpg) no-repeat;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -606,7 +622,7 @@ body {
 						font-size: 1.25em;
 						align-self: center;
 						padding-right: 1.5em;
-						
+
 					}
 			}
 
@@ -628,7 +644,7 @@ body {
 				&:hover > h1 {
 					color: $sanlo-gold;
 					text-decoration: underline;
-				} 
+				}
 				&:hover > h2 {
 					color: $sanlo-gold;
 					text-decoration: underline;
@@ -642,7 +658,7 @@ body {
 					height: 13em;
 				}
 			}
-			
+
 			h1 {
 				@include baskerville-regular;
 				color: $sanlo-navy;
@@ -665,7 +681,7 @@ body {
 	}
 
 
-	// Events 
+	// Events
 
 	.coming-soon {
 		background-color: #FAFAFA;
@@ -682,7 +698,7 @@ body {
 	// Posts Pages
 
 	.post-holder {
-		
+
 	}
 
 	// Small Groups
@@ -722,6 +738,30 @@ body {
 			}
 	}
 
+  // Young Adults
+
+  .young-adult-groups {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .current-study {
+    @include baskerville-regular;
+    font-size: 1.4rem;
+    padding: 1em 0em 0em 0em;
+    color: $sanlo-navy;
+  }
+
+  // Outreach
+
+  .outreach-header {
+    margin-top: 0.8em;
+  }
+
+  .outreach-list {
+    margin-top: 1.2em;
+  }
+
 	// Comingsoon
 
 	.coming-soon-page {
@@ -746,7 +786,3 @@ body {
 					}
 			}
 	}
-
-
-
-

@@ -6,6 +6,27 @@
 		display: none;
 	}
 
+	.unordered-list {
+	  text-align: left;
+	  @include baskerville-regular;
+	  color: $sanlo-default;
+	  font-size: 1rem;
+	  line-height: 1.8em;
+	}
+
+	.unordered-list-dashed {
+		text-align: left;
+	  @include baskerville-regular;
+	  color: $sanlo-default;
+	  font-size: 1rem;
+	  line-height: 1.7em;
+	}
+
+	ul.unordered-list-dashed > li:before {
+	  content: "-";
+	  padding-right: 0.5em;
+	}
+
 	// Homepage
 
 	.menu-button {
@@ -179,11 +200,11 @@
 	}
 
 	.location-holder {
-		
+
 			.row {
 
 					h1 {
-						
+
 					}
 
 					br {
@@ -547,7 +568,7 @@
 						font-size: 1.25em;
 						align-self: center;
 						padding-right: 1.5em;
-						
+
 					}
 			}
 	}
@@ -560,7 +581,7 @@
 				&:hover > h1 {
 					color: $sanlo-gold;
 					text-decoration: underline;
-				} 
+				}
 				&:hover > h2 {
 					color: $sanlo-gold;
 					text-decoration: underline;
@@ -574,7 +595,7 @@
 					height: 13em;
 				}
 			}
-			
+
 			h1 {
 				@include baskerville-regular;
 				color: $sanlo-navy;
@@ -681,7 +702,7 @@
 					margin: 0 auto;
 				}
 			}
-	}	
+	}
 
 	// Small Groups
 
@@ -699,7 +720,7 @@
 				flex-flow: column wrap;
 				justify-content: flex-start;
 				align-items: flex-start;
-				margin-right: 5em;
+				margin-right: 4.8em;
 			}
 	}
 
@@ -721,4 +742,3 @@
 	}
 
 }
-

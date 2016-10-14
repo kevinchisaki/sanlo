@@ -93,6 +93,24 @@ body {
 .ministry-button {
   margin: 1.5em 0em 0em 0em; }
 
+.unordered-list {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #818181;
+  font-size: 1rem;
+  line-height: 1.8em; }
+
+.unordered-list-dashed {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #818181;
+  font-size: 1rem;
+  line-height: 1.8em; }
+
 .menu-button {
   position: fixed;
   z-index: 999;
@@ -652,6 +670,24 @@ body {
     color: #333E48;
     font-size: 1.1em; }
 
+.young-adult-groups {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.current-study {
+  font-family: 'Libre Baskerville', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: 1em 0em 0em 0em;
+  color: #333E48; }
+
+.outreach-header {
+  margin-top: 0.8em; }
+
+.outreach-list {
+  margin-top: 1.2em; }
+
 .coming-soon-page {
   background-color: #f2f2f2;
   height: 90vh;
@@ -675,6 +711,28 @@ body {
 @media screen and (min-width: 64em) {
   .break-hide {
     display: none; }
+
+  .unordered-list {
+    text-align: left;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #818181;
+    font-size: 1rem;
+    line-height: 1.8em; }
+
+  .unordered-list-dashed {
+    text-align: left;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #818181;
+    font-size: 1rem;
+    line-height: 1.7em; }
+
+  ul.unordered-list-dashed > li:before {
+    content: "-";
+    padding-right: 0.5em; }
 
   .menu-button {
     display: none; }
@@ -1233,7 +1291,7 @@ body {
       flex-flow: column wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 5em; }
+      margin-right: 4.8em; }
 
   .small-group-list {
     font-family: 'Source Sans Pro', sans-serif;
