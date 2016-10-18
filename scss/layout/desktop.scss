@@ -306,11 +306,13 @@
 	.footer-bg {
 		background-color: $sanlo-navy;
 		height: 25vh;
-
 			.row {
-				@include vertical-align;
+	      height: inherit;
+	      display: flex;
+	      align-items: center;
+	      flex-direction: row;
+				justify-content: flex-start;
 					.info-footer-holder {
-						text-align: left;
 						color: #fff;
 							li {
 
@@ -325,6 +327,11 @@
 									padding: 3px 0px 3px 0px;
 									font-size: 1rem;
 									color: #fff;
+									transition: color 0.5s;
+									&:hover {
+										color: $sanlo-gold;
+										transition: color 0.5s;
+									}
 								}
 
 								.number {

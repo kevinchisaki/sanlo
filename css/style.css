@@ -321,13 +321,12 @@ body {
   background-color: #333E48;
   height: 25vh; }
   .footer-bg .row {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
     .footer-bg .row .info-footer-holder {
-      text-align: center;
       color: #fff; }
       .footer-bg .row .info-footer-holder li h1 {
         font-family: 'Libre Baskerville', serif;
@@ -944,13 +943,12 @@ body {
     background-color: #333E48;
     height: 25vh; }
     .footer-bg .row {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      height: inherit;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start; }
       .footer-bg .row .info-footer-holder {
-        text-align: left;
         color: #fff; }
         .footer-bg .row .info-footer-holder li h1 {
           font-family: 'Libre Baskerville', serif;
@@ -964,7 +962,11 @@ body {
           font-weight: 400;
           padding: 3px 0px 3px 0px;
           font-size: 1rem;
-          color: #fff; }
+          color: #fff;
+          transition: color 0.5s; }
+          .footer-bg .row .info-footer-holder li a:hover {
+            color: #DAA25A;
+            transition: color 0.5s; }
         .footer-bg .row .info-footer-holder li .number {
           padding-right: 15px;
           border-right: 1px solid #DAA25A; }

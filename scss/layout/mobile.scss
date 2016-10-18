@@ -324,11 +324,13 @@ body {
 .footer-bg {
 	background-color: $sanlo-navy;
 	height: 25vh;
-
 		.row {
-			@include vertical-align;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
 				.info-footer-holder {
-					text-align: center;
 					color: #fff;
 						li {
 
