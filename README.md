@@ -1,7 +1,12 @@
 # San Lorenzo Japanese Christian Church
 
-### Designed & Developed by Kevin Chisaki
 Powered by [CraftCMS] (https://craftcms.com/)
+All Photography and Design &copy; Kevin Chisaki
+
+Typography:
+ - [Baskerville] (https://fonts.google.com/specimen/Libre+Baskerville)
+ - [Play Display] (https://fonts.google.com/specimen/Playfair+Display)
+ - [Open Sans] (https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans)
 
 ---
 
@@ -28,5 +33,11 @@ Powered by [CraftCMS] (https://craftcms.com/)
 1. ~~Initial Wireframes~~
 2. ~~Final Designs~~
 3. Banner Images
+4. Purpose Icons
 
-##
+# Order of Operations
+
+As of right now I am still working on the CMS locally on my computer using [Laravel Homestead.] (https://laravel.com/docs/5.3/homestead)
+
+What is LIVE on the actual website right now is just pure HTML & SASS to mock up the site.
+I've decided not to upload the MYSQL database and CMS until it's all structured and tested on my machine to avoid problems LIVE.
