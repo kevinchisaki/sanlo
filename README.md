@@ -54,6 +54,6 @@ If you're wondering why I'm using Craft instead of other CMS systems you can loo
 
 # Localization
 
-As for localization, Craft has their own method/feature although it does cost $200 and we have to ask the board for budgets.
+As for localization, [Craft has their own method/feature] (https://craftcms.com/docs/localization-guide) although it does cost $200 and we have to ask the board for budgets.
 
 Haru if you can figure out a how to do the localization without paying for the feature I'm all ears.
