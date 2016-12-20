@@ -311,8 +311,9 @@
 	      display: flex;
 	      align-items: center;
 	      flex-direction: row;
-				justify-content: flex-start;
+				justify-content: space-between;
 					.info-footer-holder {
+						width: 100%;
 						color: #fff;
 							li {
 
@@ -344,6 +345,32 @@
 								}
 							}
 					}
+
+						.facebook-tt {
+							background: lightgray;
+							border-radius: 5px;
+							color: white;
+							position: absolute;
+							padding: 8px 15px 10px 15px;
+							margin-top: 3px;
+								span {
+									@include sourcesans-regular;
+									font-size: 1.2em;
+									padding: 0px 5px 0px 5px !important;
+									position: relative;
+								}
+								a {
+									@include sourcesans-regular;
+								}
+						}
+
+						.facebook-icon {
+							color: $sanlo-gold;
+							margin-top: 8px;
+							i {
+
+							}
+						}
 			}
 	}
 

@@ -327,9 +327,10 @@ body {
 		.row {
       height: inherit;
       display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 15px 0 15px;
 				.info-footer-holder {
 					color: #fff;
 						li {
