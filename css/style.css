@@ -981,20 +981,11 @@ body {
         position: absolute;
         padding: 8px 15px 10px 15px;
         margin-top: 3px; }
-        .footer-bg .row .facebook-tt span {
-          font-family: 'Source Sans Pro', sans-serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1.2em;
-          padding: 0px 5px 0px 5px !important;
-          position: relative; }
-        .footer-bg .row .facebook-tt a {
-          font-family: 'Source Sans Pro', sans-serif;
-          font-style: normal;
-          font-weight: 400; }
       .footer-bg .row .facebook-icon {
         color: #DAA25A;
         margin-top: 8px; }
+        .footer-bg .row .facebook-icon:hover {
+          color: #fff; }
 
   .about-hero {
     padding-top: 4em;
