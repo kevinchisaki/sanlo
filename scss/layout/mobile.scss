@@ -188,10 +188,12 @@ body {
 				z-index: 2;
 				.row {
 					height: 100%;
-					text-align: center;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
 					.inner-row {
-						min-width: 100%;
-						@include vertical-align;
+						text-align: center;
 							h1 {
 								@include playfair-italic;
 								margin-bottom: 0px !important;
@@ -238,7 +240,7 @@ body {
 	background-color: #F7F7F7;
 	padding: 5em 0em 8em 0em;
 		.row {
-			height: inherit;
+			// height: inherit;
 			.service-times {
 				padding-bottom: 4em;
 				text-align: center;
@@ -363,17 +365,28 @@ body {
 							}
 						}
 				}
+        .facebook-icon {
+          color: $sanlo-gold;
+          margin-top: 8px;
+          transition: 0.5s color;
+            &:hover {
+              color: #657380;
+              transition: 0.5s color;
+            }
+        }
 		}
 }
 
 // About Section Globals
 
 .about-hero {
-	padding-top: 4em;
+	padding-top: 3.8em;
 	background-color: #f2f2f2;
-	height: 60vh;
+	height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 		.row {
-			@include vertical-align;
 			text-align: center;
 				h1 {
 					@include playfair-italic;
@@ -594,13 +607,13 @@ body {
 			}
 	}
 
-	.anouncement-content {
+	.announcement-content {
 		margin: 1.4em 0em 4em 0em;
 		background-clip: padding-box;
-			.anouncement-block {
+			.announcement-block {
 				background-color: #FAFAFA;
 				background-clip: content-box;
-				margin: 0.2em 0 0.2em 0;
+				margin: 0.5em 0em 0.5em 0em;
 				justify-content: space-between;
 				align-items: center;
 				flex-direction: row;
@@ -608,29 +621,40 @@ body {
 				flex-wrap: wrap;
 				height: 4em;
 				transition: background-color 0.5s;
+        flex-grow: 0;
+				flex-wrap: nowrap;
 				&:hover {
 					background-color: #f0f0f0;
 					transition: background-color 0.5s;
 				}
-					h1 {
-						@include baskerville-regular;
-						color: $sanlo-navy;
-						padding-left: 1.5em;
-						font-size: 1.1em;
-						text-overflow: ellipsis;
-					}
-					h2 {
-						@include pathway-gothic;
-						color: $sanlo-gold;
-						font-size: 1.25em;
-						align-self: center;
-						padding-right: 1.5em;
+          .announcement-title {
+            text-overflow: ellipsis;
+            overflow: hidden;
+              h1 {
+    						@include baskerville-regular;
+    						color: $sanlo-navy;
+    						margin-left: 1.5em;
+    						font-size: 1.1em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+    					}
+          }
+					.announcement-date {
 
-					}
+              h2 {
+                @include pathway-gothic;
+                color: $sanlo-gold;
+                font-size: 1.25em;
+                align-self: center;
+                margin-right: 1.5em;
+                margin-left: 0.5em;
+              }
+          }
 			}
 
 			.button-holder {
-				padding: 2.5em 0em 1em 0em;
+				padding: 2.4em 0em 1em 0em;
 			}
 	}
 

@@ -156,10 +156,8 @@
 				z-index: 2;
 				.row {
 					height: 100%;
-					text-align: left;
 					.inner-row {
-						min-width: 100%;
-						@include vertical-align;
+						margin-top: 1.3em;
 							h1 {
 								@include playfair-italic;
 								margin-bottom: 0px !important;
@@ -220,8 +218,9 @@
 		padding: 0;
 			.row {
 				height: inherit;
+				display: flex;
+				align-items: center;
 				.service-times {
-					@include vertical-align;
 					text-align: center;
 					padding: 0;
 					ul {
@@ -270,7 +269,6 @@
 				}
 
 				.sermon-series {
-					@include vertical-align;
 					text-align: center;
 					padding: 0;
 					ul {
@@ -346,22 +344,6 @@
 							}
 					}
 
-						.facebook-tt {
-							background: lightgray;
-							border-radius: 5px;
-							color: white;
-							position: absolute;
-							padding: 8px 15px 10px 15px;
-							margin-top: 3px;
-						}
-
-						.facebook-icon {
-							color: $sanlo-gold;
-							margin-top: 8px;
-								&:hover {
-									color: #fff;
-								}
-						}
 			}
 	}
 
@@ -372,7 +354,6 @@
 		background-color: #f2f2f2;
 		height: 50vh;
 			.row {
-				@include vertical-align;
 				text-align: center;
 					h1 {
 						@include playfair-italic;
@@ -409,6 +390,9 @@
 								color: #fff;
 								transition: color 0.2s;
 							}
+						}
+						&:last-child {
+							padding-right: 0em;
 						}
 
 						.about-selected {
@@ -564,36 +548,38 @@
 		display: none;
 	}
 
-	.anouncement-content {
+	.announcement-content {
 		margin: 1.4em 0em 4em 0em;
 		background-clip: padding-box;
-			.anouncement-block {
-				background-color: #FAFAFA;
-				background-clip: content-box;
-				margin: 0.2em 0 0.2em 0;
-				justify-content: space-between;
-				align-items: center;
-				flex-direction: row;
-				display: flex;
-				height: 4em;
-				transition: background-color 0.5s;
+			.announcement-block {
+
 				&:hover {
 					background-color: #f0f0f0;
 					transition: background-color 0.5s;
 				}
-					h1 {
-						@include baskerville-regular;
-						color: $sanlo-navy;
-						padding-left: 1.5em;
-						font-size: 1.1em;
+					.announcement-title {
+						text-overflow: ellipsis;
+						overflow: hidden;
+							h1 {
+								@include baskerville-regular;
+								color: $sanlo-navy;
+								margin-left: 1.5em;
+								font-size: 1.1em;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
 					}
-					h2 {
-						@include pathway-gothic;
-						color: $sanlo-gold;
-						font-size: 1.25em;
-						align-self: center;
-						padding-right: 1.5em;
+					.announcement-date {
 
+							h2 {
+								@include pathway-gothic;
+								color: $sanlo-gold;
+								font-size: 1.25em;
+								align-self: center;
+								margin-right: 1.5em;
+								margin-left: 1.5em;
+							}
 					}
 			}
 	}
