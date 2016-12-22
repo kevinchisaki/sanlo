@@ -524,15 +524,13 @@ body {
 				text-align: center;
 				padding-bottom: 2em;
 					.staff-picture {
-						background-size: cover;
-						background-repeat: no-repeat;
-						background-position: center center;
-						background-color: #f2f2f2;
-						margin-bottom: 0.5em;
-						display: inline-block;
-						height: 10em;
-						width: 100%;
-						overflow: hidden;
+            background-clip: content-box;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: #f2f2f2;
+            margin-bottom: 0.8em;
 					}
 
 					h1 {

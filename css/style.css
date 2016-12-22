@@ -478,15 +478,13 @@ body {
       text-align: center;
       padding-bottom: 2em; }
       .staff-section-bg .row .staff-profile-holder .staff-picture {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+        background-clip: content-box;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
         background-color: #f2f2f2;
-        margin-bottom: 0.5em;
-        display: inline-block;
-        height: 10em;
-        width: 100%;
-        overflow: hidden; }
+        margin-bottom: 0.8em; }
       .staff-section-bg .row .staff-profile-holder h1 {
         font-family: 'Libre Baskerville', serif;
         font-style: normal;
@@ -838,7 +836,7 @@ body {
       .home-hero .welcome-container .row {
         height: 100%; }
         .home-hero .welcome-container .row .inner-row {
-          margin-top: 1.3em; }
+          margin-top: 1.7em; }
           .home-hero .welcome-container .row .inner-row h1 {
             font-family: 'Playfair Display', serif;
             font-style: italic;
@@ -993,7 +991,8 @@ body {
 
   .about-nav-bg {
     display: block;
-    background-color: #333E48; }
+    background-color: #333E48;
+    text-align: center; }
     .about-nav-bg .about-nav-links li {
       display: inline-block;
       padding: 1.5rem 2em 1.5rem 0rem; }
@@ -1054,15 +1053,13 @@ body {
         text-align: center;
         padding-bottom: 2em; }
         .staff-section-bg .row .staff-profile-holder .staff-picture {
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
+          background-clip: content-box;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
           background-color: #f2f2f2;
-          margin-bottom: 0.8em;
-          display: inline-block;
-          height: 16.5rem;
-          width: 100%;
-          overflow: hidden; }
+          margin-bottom: 0.8em; }
         .staff-section-bg .row .staff-profile-holder h1 {
           font-family: 'Libre Baskerville', serif;
           font-style: normal;
