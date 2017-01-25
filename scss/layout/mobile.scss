@@ -10,9 +10,33 @@
 }
 
 body {
-	background-color: $sanlo-navy;
+	background-color: #fff;
 	color: $default;
 }
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: $sanlo-gold;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+
 
 // Globals
 
@@ -45,11 +69,14 @@ body {
 }
 
 .unordered-list-dashed {
-  text-align: center;
-  @include baskerville-regular;
-  color: $sanlo-default;
-  font-size: 1rem;
-  line-height: 1.8em;
+
+    ul {
+      text-align: center;
+      @include baskerville-regular;
+      color: $sanlo-default;
+      font-size: 1rem;
+      line-height: 1.8em;
+    }
 }
 
 // Homepage
@@ -325,18 +352,20 @@ body {
 
 .footer-bg {
 	background-color: $sanlo-navy;
-	height: 25vh;
+	height: 35vh;
 		.row {
       height: inherit;
       display: flex;
       align-items: center;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       padding: 0 15px 0 15px;
 				.info-footer-holder {
 					color: #fff;
 						li {
-
+              display: flex;
+              flex-direction: column;
+              text-align: center;
 							h1 {
 								@include baskerville-regular;
 								font-size: 1.15rem;
@@ -344,6 +373,7 @@ body {
 							}
 
 							a {
+                display: block;
 								@include baskerville-regular;
 								padding: 3px 0px 3px 0px;
 								font-size: 1rem;
@@ -356,12 +386,14 @@ body {
 							}
 
 							.number {
-								padding-right: 15px;
-								border-right: 1px solid $sanlo-gold;
+								padding-right: 0px;
+								border-right: 0px;
+                order: 1;
 							}
 
 							.email {
-								padding-left: 10px;
+								padding-left: 0px;
+                order: -1;
 							}
 						}
 				}
@@ -375,6 +407,48 @@ body {
             }
         }
 		}
+}
+
+// banner backgrounds
+
+#childrens-ministry-banner {
+  background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2;
+}
+
+#youth-ministry-banner {
+  background: url(../img/banner/youth-ministry-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2;
+}
+
+#young-adult-banner {
+  background: url(../img/banner/young-adult-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2;
+}
+
+#small-group-banner {
+  background: url(../img/banner/small-group-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2;
+}
+
+#outreach-banner {
+  background: url(../img/banner/outreach-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2;
 }
 
 // About Section Globals
@@ -418,8 +492,11 @@ body {
 					@include playfair-italic;
 					font-size: 2.2rem;
 					color: $sanlo-navy;
+          margin-top: 0.8em;
+          &:first-of-type {
+            margin-top: 0;
+          }
 				}
-
 				h2 {
 					@include pathway-gothic;
 					text-transform: uppercase;
@@ -433,7 +510,7 @@ body {
 					text-transform: uppercase;
 					font-size: 1.6rem;
 					color: $sanlo-gold;
-					padding: 1em 0em 0.5em 0em;
+					padding: 1em 0em 0.3em 0em;
 				}
 
 				p {
@@ -442,14 +519,6 @@ body {
 					line-height: 1.5em;
 					padding-top: 1em;
 					font-size: 1rem;
-				}
-
-				.expect-p {
-					@include baskerville-regular;
-					color: $sanlo-default;
-					line-height: 1.5em;
-					font-size: 1rem;
-					padding-top: 0px;
 				}
 
 				a {
@@ -469,10 +538,22 @@ body {
 					font-size: 1rem;
 					line-height: 1.5em;
 					margin-left: 1.7em;
+          margin-top: 0.9em;
 						li {
 							padding-left: 0.2em;
 						}
 				}
+
+        ul {
+          @include baskerville-regular;
+          color: $sanlo-default;
+          font-size: 1rem;
+          line-height: 1.8em;
+          margin-top: 0.4em;
+            li {
+              padding: 0.1em 0em 0.1em 0em;
+            }
+        }
 		}
 }
 
@@ -520,39 +601,45 @@ body {
 	background-color: #fff;
 		.row {
 			padding-top: 3em;
-			.staff-profile-holder {
-				text-align: center;
-				padding-bottom: 2em;
-					.staff-picture {
-            background-clip: content-box;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background-color: #f2f2f2;
-            margin-bottom: 0.8em;
-					}
+  			.staff-profile-holder {
+  				text-align: center;
+  				padding-bottom: 2em;
+  					.staff-picture {
+              background-clip: content-box;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              background-color: #f2f2f2;
+              margin-bottom: 0.8em;
+  					}
 
-					h1 {
-						@include baskerville-regular;
-						font-size: 1.2em;
-						color: $sanlo-navy;
-					}
+  					h1 {
+  						@include baskerville-regular;
+  						font-size: 1.2em;
+  						color: $sanlo-navy;
+  					}
 
-					h2 {
-						@include pathway-gothic;
-						text-transform: uppercase;
-						font-size: 1.1em;
-						color: $sanlo-gold;
+  					h2 {
+  						@include pathway-gothic;
+  						text-transform: uppercase;
+  						font-size: 1.1em;
+  						color: $sanlo-gold;
 
-					}
+  					}
 
-					h3 {
-						@include sourcesans-regular;
-						font-size: 0.8em;
-						color: $sanlo-lightblue;
-					}
-			}
+  					h3 {
+  						@include sourcesans-regular;
+  						font-size: 0.8em;
+  						color: $sanlo-lightblue;
+  					}
+  			}
+        .alpha-staff {
+          padding-right: 0.5rem;
+        }
+        .omega-staff {
+          padding-left: 0.5rem;
+        }
 		}
 }
 
@@ -666,13 +753,16 @@ body {
 			.newsletter-block {
 				display: inline-block;
 				padding-bottom: 2em;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
 				&:hover > h1 {
 					color: $sanlo-gold;
-					text-decoration: underline;
+          transition: all 0.5s;
 				}
 				&:hover > h2 {
-					color: $sanlo-gold;
-					text-decoration: underline;
+          color: $sanlo-gold;
+          transition: all 0.5s;
 				}
 				.newsletter-img {
 					background-size: cover;
@@ -688,16 +778,16 @@ body {
 				@include baskerville-regular;
 				color: $sanlo-navy;
 				padding-top: 0.5em;
-				font-size: 1.3em;
-				overflow: hidden;
-				text-overflow: ellipsis;
+				font-size: 1.1em;
+        transition: all 0.5s;
 			}
 
 			h2 {
 				@include pathway-gothic;
 				text-transform: uppercase;
-				color: $sanlo-gold;
-				font-size: 1.25em;
+				color: $sanlo-lightblue;
+				font-size: 1.1em;
+        transition: all 0.5s;
 			}
 
 			.button-holder {
@@ -705,26 +795,135 @@ body {
 			}
 	}
 
+  // Events Page
 
-	// Events
+  .calendar-holder {
 
-	.coming-soon {
+    .responsive-frame {
+      position: relative;
+      padding-bottom: 75%;
+      height: 0;
+      overflow: hidden;
+      margin: 0 15px;
+        iframe {
+          background-color: #f2f2f2;
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .calendar-desktop {
+          display: none;
+        }
+        .calendar-mobile {
+          display: block;
+        }
+    }
+  }
+
+  // Posts Pages
+
+	.post-nav-bg {
+		padding: 2.5em 1em 2.5em 1em;
 		background-color: #FAFAFA;
-		padding: 15em 0em 15em 0em;
-		text-align: center;
-		p {
-			@include pathway-gothic;
-			text-transform: uppercase;
-			font-size: 1.5em;
-		}
+		justify-content: space-between;
+		display: flex;
+			a {
+				text-transform: uppercase;
+				@include pathway-gothic;
+				font-size: 1.5em;
+				color: $sanlo-gold;
+				transition: color 0.5s;
+				&:hover {
+					color: $sanlo-navy;
+					transition: color 0.5s;
+				}
+			}
+			.post-nav-link {
+				width: 100%;
+			}
+			.previous {
+				text-align: left;
+			}
+			.news-home {
+				text-align: center;
+			}
+			.next {
+				text-align: right;
+			}
 	}
-
-
-	// Posts Pages
 
 	.post-holder {
+		background-color: white;
+		padding-bottom: 6em;
+			.post-body-top {
+				padding: 6em 0em 3.5em 0em;
+				.post-title {
+					@include baskerville-regular;
+					font-size: 2em;
+					text-align: center;
+				}
+				.post-date {
+					@include pathway-gothic;
+					color: $sanlo-gold;
+					font-size: 1.3em;
+					text-transform: uppercase;
+					text-align: center;
+				}
+			}
 
+			.post-body {
+
+				p {
+					@include baskerville-regular;
+					color: $sanlo-default;
+					padding: 0.7em 0em 0.7em 0em;
+					line-height: 1.8em;
+					font-size: 1.1em;
+				}
+
+				i {
+					@include baskerville-italic;
+					font-size: inherit;
+				}
+
+				a {
+					color: $sanlo-gold;
+					transition: color 0.5s;
+					&:hover {
+						color: $sanlo-navy;
+						transition: color 0.5s;
+					}
+				}
+
+				blockquote {
+					border-left: 5px solid #eaeff2;
+					margin: 15px 0px 15px 0px;
+					p {
+						@include baskerville-italic;
+						font-size: 1.12em;
+						padding: 20px 35px 20px 35px;
+					}
+				}
+
+				hr {
+					background-color: $sanlo-gold;
+					border-bottom: 0;
+					padding: 0.1em;
+					display: block;
+					text-align: center;
+					max-width: 11%;
+				}
+
+				img {
+					display: block;
+					padding: 20px 0px 20px 0px;
+					margin: 0 auto;
+				}
+			}
 	}
+
 
 	// Small Groups
 
@@ -743,23 +942,22 @@ body {
 				flex-flow: row wrap;
 				justify-content: center;
 				align-items: center;
-			}
-	}
+          .small-group-list {
+        		@include sourcesans-regular;
+        		display: inline-block;
+        		line-height: 1.35em;
+        		font-size: 1em;
+        		color: $sanlo-default;
+        		padding-top: 1.4em;
+        			li {
 
-	.small-group-list {
-		@include sourcesans-regular;
-		display: inline-block;
-		line-height: 1.35em;
-		font-size: 1em;
-		color: $sanlo-default;
-		padding-top: 1.4em;
-			li {
-
-				&:first-child {
-					@include baskerville-regular;
-					color: $sanlo-navy;
-					font-size: 1.1em;
-				}
+        				&:first-child {
+        					@include baskerville-regular;
+        					color: $sanlo-navy;
+        					font-size: 1.1em;
+        				}
+        			}
+        	}
 			}
 	}
 
@@ -770,44 +968,17 @@ body {
     margin-bottom: 1em;
   }
 
-  .current-study {
-    @include baskerville-regular;
-    font-size: 1.4rem;
-    padding: 1em 0em 0em 0em;
-    color: $sanlo-navy;
+  .current-study-outer {
+    padding: 1.5em 0em 0.6em 0em;
+      .current-study {
+        @include baskerville-regular;
+        font-size: 1.4rem;
+        color: $sanlo-navy;
+      }
   }
 
   // Outreach
 
-  .outreach-header {
-    margin-top: 0.8em;
-  }
-
   .outreach-list {
     margin-top: 1.2em;
   }
-
-	// Comingsoon
-
-	.coming-soon-page {
-		background-color: #f2f2f2;
-		height: 90vh;
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		align-items: center;
-		flex-direction: row;
-			.coming-soon-text {
-				text-align: center;
-					h1 {
-						@include playfair-italic;
-						font-size: 2em;
-						color: $sanlo-default;
-					}
-
-					p {
-						color: $sanlo-gold;
-						padding-top: 4px;
-					}
-			}
-	}

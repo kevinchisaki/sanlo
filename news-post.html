@@ -17,33 +17,37 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animsition.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Pathway+Gothic+One|Playfair+Display:400,400i" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
 
 </head>
 
 <body>
 
+<div class="animsition">
+
   <nav class="post-nav-bg">
-    <a href="#">&#8592; Previous</a>
-    <a href="news.html">Back to news</a>
-    <a href="#">Next &#8594;</a>
+    <div class="post-nav-link previous">
+      <a href="#" class="animsition-link">&#8592; Prev</a>
+    </div>
+    <div class="post-nav-link news-home">
+      <a href="news.html" class="animsition-link">Back to news</a>
+    </div>
+    <div class="post-nav-link next">
+      <a href="#" class="animsition-link">Next &#8594;</a>
+    </div>
   </nav>
 
   <article class="post-holder">
     <div class="row">
-      <div class="post-body-top large-7 large-centered column">
+      <div class="post-body-top medium-8 medium-centered large-7 large-centered column">
         <h1 class="post-title">This is a News Post Example</h1>
         <h2 class="post-date">September 12,2016 - News</h2>
       </div>
     </div>
     <div class="row">
-      <div class="post-body large-7 large-centered column">
+      <div class="post-body small-11 small-centered medium-8 medium-centered large-7 large-centered column">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut semper nisl. Sed quis interdum enim. Pellentesque placerat maximus erat, lacinia placerat purus posuere in. Ut euismod dignissim risus ac cursus. Donec sed enim non est laoreet malesuada non a felis. Suspendisse potenti. Aliquam condimentum nisi sit amet justo viverra rhoncus.</p>
 
@@ -82,8 +86,12 @@
 
   </footer>
 
-  <script src="js/vendor/jquery.easing.1.3.js"></script>
+</div>
 
+  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="./js/animsition.min.js"></script>
+  <script type="text/javascript" src="./js/pace.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
   <script src="js/build.js"></script>
 
 </body>

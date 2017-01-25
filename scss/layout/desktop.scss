@@ -1,6 +1,6 @@
 // Desktop
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1025px) {
 
 	.break-hide {
 		display: none;
@@ -15,16 +15,19 @@
 	}
 
 	.unordered-list-dashed {
-		text-align: left;
-	  @include baskerville-regular;
-	  color: $sanlo-default;
-	  font-size: 1rem;
-	  line-height: 1.7em;
-	}
 
-	ul.unordered-list-dashed > li:before {
-	  content: "-";
-	  padding-right: 0.5em;
+		ul {
+			text-align: left;
+		  @include baskerville-regular;
+		  color: $sanlo-default;
+		  font-size: 1rem;
+		  line-height: 1.7em;
+		}
+
+		ul > li:before {
+			content: "-";
+			padding-right: 0.5em;
+		}
 	}
 
 	// Homepage
@@ -314,7 +317,8 @@
 						width: 100%;
 						color: #fff;
 							li {
-
+								display: block;
+								text-align: left;
 								h1 {
 									@include baskerville-regular;
 									font-size: 1.15rem;
@@ -322,6 +326,7 @@
 								}
 
 								a {
+									display: inline-block;
 									@include baskerville-regular;
 									padding: 3px 0px 3px 0px;
 									font-size: 1rem;
@@ -345,6 +350,48 @@
 					}
 
 			}
+	}
+
+	// banner backgrounds
+
+	#childrens-ministry-banner {
+	  background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat 100% 78%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#youth-ministry-banner {
+	  background: url(../img/banner/youth-ministry-banner.jpg) no-repeat 100% 13%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#young-adult-banner {
+	  background: url(../img/banner/young-adult-banner.jpg) no-repeat 100% 50%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#small-group-banner {
+	  background: url(../img/banner/small-group-banner.jpg) no-repeat 100% 33%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#outreach-banner {
+	  background: url(../img/banner/outreach-banner.jpg) no-repeat 100% 43%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
 	}
 
 	// About Section Globals
@@ -404,9 +451,25 @@
 	}
 
 	.about-section-bg {
-		padding: 4.2em 0em 9em 0em;
+		padding: 3em 0em 9em 0em;
 		background-color: #fff;
 		text-align: left;
+			.about-section {
+
+				ol {
+					@include baskerville-regular;
+					list-style-type: upper-roman;
+					color: $sanlo-default;
+					font-size: 1rem;
+					line-height: 1.5em;
+					margin-left: 1.7em;
+					margin-top: 0.9em;
+					display: inline-block;
+						li {
+							padding-left: 0.2em;
+						}
+				}
+			}
 	}
 
 	// Purpose Page
@@ -457,39 +520,45 @@
 		background-color: #fff;
 			.row {
 				padding-top: 3em;
-				.staff-profile-holder {
-					text-align: center;
-					padding-bottom: 2em;
-						.staff-picture {
-							background-clip: content-box;
-		          display: inline-flex;
-		          justify-content: center;
-		          align-items: center;
-		          overflow: hidden;
-							background-color: #f2f2f2;
-							margin-bottom: 0.8em;
-						}
+					.staff-profile-holder {
+						text-align: center;
+						padding-bottom: 2em;
+							.staff-picture {
+								background-clip: content-box;
+			          display: inline-flex;
+			          justify-content: center;
+			          align-items: center;
+			          overflow: hidden;
+								background-color: #f2f2f2;
+								margin-bottom: 0.8em;
+							}
 
-						h1 {
-							@include baskerville-regular;
-							font-size: 1.3em;
-							color: $sanlo-navy;
-						}
+							h1 {
+								@include baskerville-regular;
+								font-size: 1.3em;
+								color: $sanlo-navy;
+							}
 
-						h2 {
-							@include pathway-gothic;
-							text-transform: uppercase;
-							font-size: 1.2em;
-							color: $sanlo-gold;
+							h2 {
+								@include pathway-gothic;
+								text-transform: uppercase;
+								font-size: 1.2em;
+								color: $sanlo-gold;
 
-						}
+							}
 
-						h3 {
-							@include sourcesans-regular;
-							font-size: 1em;
-							color: $sanlo-lightblue;
-						}
-				}
+							h3 {
+								@include sourcesans-regular;
+								font-size: 1em;
+								color: $sanlo-lightblue;
+							}
+					}
+					.alpha-staff {
+	          padding-right: .9375rem;
+	        }
+	        .omega-staff {
+	          padding-left: .9375rem;
+	        }
 			}
 	}
 
@@ -586,15 +655,12 @@
 	.newsletter-content {
 		margin: 1.4em 0em 0em 0em;
 			.newsletter-block {
-				display: inline-block;
-				padding-bottom: 2em;
+				text-align: left;
 				&:hover > h1 {
-					color: $sanlo-gold;
-					text-decoration: underline;
+
 				}
 				&:hover > h2 {
-					color: $sanlo-gold;
-					text-decoration: underline;
+
 				}
 				.newsletter-img {
 					background-size: cover;
@@ -618,9 +684,26 @@
 			h2 {
 				@include pathway-gothic;
 				text-transform: uppercase;
-				color: $sanlo-gold;
 				font-size: 1.1em;
 			}
+	}
+
+	// Events Page
+
+	.calendar-holder {
+
+		.responsive-frame {
+
+				iframe {
+
+				}
+				.calendar-desktop {
+          display: block;
+        }
+				.calendar-mobile {
+          display: none;
+        }
+		}
 	}
 
 	// Posts Pages
@@ -628,19 +711,32 @@
 	.post-nav-bg {
 		padding: 2.5em 2.5em 2.5em 2.5em;
 		background-color: #FAFAFA;
-		display: flex;
 		justify-content: space-between;
+		display: flex;
 			a {
 				text-transform: uppercase;
 				@include pathway-gothic;
 				font-size: 1.5em;
 				color: $sanlo-gold;
 				transition: color 0.5s;
-
 				&:hover {
 					color: $sanlo-navy;
 					transition: color 0.5s;
 				}
+			}
+			.post-nav-link {
+				width: 100%;
+			}
+			.previous {
+				display: inline-block;
+				text-align: left;
+			}
+			.news-home {
+				text-align: center;
+			}
+			.next {
+				display: inline-block;
+				text-align: right;
 			}
 	}
 
@@ -723,31 +819,16 @@
 
 	.small-group-outer {
 		display: flex;
-		justify-content: flex-start;
+		flex-flow: row wrap;
+		justify-content: space-between;
 		align-items: flex-start;
 			.small-group-holder {
 				display: flex;
 				flex-flow: column wrap;
 				justify-content: flex-start;
 				align-items: flex-start;
-				margin-right: 4.8em;
-			}
-	}
-
-	.small-group-list {
-		@include sourcesans-regular;
-		display: inline-block;
-		line-height: 1.35em;
-		font-size: 1em;
-		color: $sanlo-default;
-		padding-top: 1.4em;
-			li {
-
-				&:first-child {
-					@include baskerville-regular;
-					color: $sanlo-navy;
-					font-size: 1.1em;
-				}
+				flex-grow: 1;
+				flex-shrink: 0;
 			}
 	}
 

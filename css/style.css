@@ -71,8 +71,27 @@ a, a:hover, a:focus, a:active {
   color: #818181; }
 
 body {
-  background-color: #333E48;
+  background-color: #fff;
   color: #4D4D4D; }
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #DAA25A;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px; }
 
 .sanlo-button {
   font-family: 'Source Sans Pro', sans-serif;
@@ -102,7 +121,7 @@ body {
   font-size: 1rem;
   line-height: 1.8em; }
 
-.unordered-list-dashed {
+.unordered-list-dashed ul {
   text-align: center;
   font-family: 'Libre Baskerville', serif;
   font-style: normal;
@@ -315,38 +334,45 @@ body {
 
 .footer-bg {
   background-color: #333E48;
-  height: 25vh; }
+  height: 35vh; }
   .footer-bg .row {
     height: inherit;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 15px 0 15px; }
     .footer-bg .row .info-footer-holder {
       color: #fff; }
-      .footer-bg .row .info-footer-holder li h1 {
-        font-family: 'Libre Baskerville', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.15rem;
-        padding-bottom: 8px; }
-      .footer-bg .row .info-footer-holder li a {
-        font-family: 'Libre Baskerville', serif;
-        font-style: normal;
-        font-weight: 400;
-        padding: 3px 0px 3px 0px;
-        font-size: 1rem;
-        color: #fff;
-        transition: color 0.5s; }
-        .footer-bg .row .info-footer-holder li a:hover {
-          color: #DAA25A;
+      .footer-bg .row .info-footer-holder li {
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .footer-bg .row .info-footer-holder li h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.15rem;
+          padding-bottom: 8px; }
+        .footer-bg .row .info-footer-holder li a {
+          display: block;
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          padding: 3px 0px 3px 0px;
+          font-size: 1rem;
+          color: #fff;
           transition: color 0.5s; }
-      .footer-bg .row .info-footer-holder li .number {
-        padding-right: 15px;
-        border-right: 1px solid #DAA25A; }
-      .footer-bg .row .info-footer-holder li .email {
-        padding-left: 10px; }
+          .footer-bg .row .info-footer-holder li a:hover {
+            color: #DAA25A;
+            transition: color 0.5s; }
+        .footer-bg .row .info-footer-holder li .number {
+          padding-right: 0px;
+          border-right: 0px;
+          order: 1; }
+        .footer-bg .row .info-footer-holder li .email {
+          padding-left: 0px;
+          order: -1; }
     .footer-bg .row .facebook-icon {
       color: #DAA25A;
       margin-top: 8px;
@@ -354,6 +380,41 @@ body {
       .footer-bg .row .facebook-icon:hover {
         color: #657380;
         transition: 0.5s color; }
+
+#childrens-ministry-banner {
+  background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#youth-ministry-banner {
+  background: url(../img/banner/youth-ministry-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#young-adult-banner {
+  background: url(../img/banner/young-adult-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#small-group-banner {
+  background: url(../img/banner/small-group-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#outreach-banner {
+  background: url(../img/banner/outreach-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
 
 .about-hero {
   padding-top: 3.8em;
@@ -393,7 +454,10 @@ body {
       font-style: italic;
       font-weight: 400;
       font-size: 2.2rem;
-      color: #333E48; }
+      color: #333E48;
+      margin-top: 0.8em; }
+      .about-section-bg .about-section h1:first-of-type {
+        margin-top: 0; }
     .about-section-bg .about-section h2 {
       font-family: 'Pathway Gothic One', sans-serif;
       font-style: normal;
@@ -409,7 +473,7 @@ body {
       text-transform: uppercase;
       font-size: 1.6rem;
       color: #DAA25A;
-      padding: 1em 0em 0.5em 0em; }
+      padding: 1em 0em 0.3em 0em; }
     .about-section-bg .about-section p {
       font-family: 'Libre Baskerville', serif;
       font-style: normal;
@@ -418,14 +482,6 @@ body {
       line-height: 1.5em;
       padding-top: 1em;
       font-size: 1rem; }
-    .about-section-bg .about-section .expect-p {
-      font-family: 'Libre Baskerville', serif;
-      font-style: normal;
-      font-weight: 400;
-      color: #818181;
-      line-height: 1.5em;
-      font-size: 1rem;
-      padding-top: 0px; }
     .about-section-bg .about-section a {
       color: #DAA25A;
       transition: color 0.5s; }
@@ -441,9 +497,20 @@ body {
       text-align: left;
       font-size: 1rem;
       line-height: 1.5em;
-      margin-left: 1.7em; }
+      margin-left: 1.7em;
+      margin-top: 0.9em; }
       .about-section-bg .about-section ol li {
         padding-left: 0.2em; }
+    .about-section-bg .about-section ul {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #818181;
+      font-size: 1rem;
+      line-height: 1.8em;
+      margin-top: 0.4em; }
+      .about-section-bg .about-section ul li {
+        padding: 0.1em 0em 0.1em 0em; }
 
 .sanlo-purpose-holder {
   text-align: center; }
@@ -504,6 +571,10 @@ body {
         font-weight: 400;
         font-size: 0.8em;
         color: #B9C4CE; }
+    .staff-section-bg .row .alpha-staff {
+      padding-right: 0.5rem; }
+    .staff-section-bg .row .omega-staff {
+      padding-left: 0.5rem; }
 
 .news-section-bg {
   padding: 4em 0em 5em 0em;
@@ -602,13 +673,16 @@ body {
   margin: 1.4em 0em 0em 0em; }
   .newsletter-content .newsletter-block {
     display: inline-block;
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; }
     .newsletter-content .newsletter-block:hover > h1 {
       color: #DAA25A;
-      text-decoration: underline; }
+      transition: all 0.5s; }
     .newsletter-content .newsletter-block:hover > h2 {
       color: #DAA25A;
-      text-decoration: underline; }
+      transition: all 0.5s; }
     .newsletter-content .newsletter-block .newsletter-img {
       background-size: cover;
       background-repeat: no-repeat;
@@ -622,29 +696,120 @@ body {
     font-weight: 400;
     color: #333E48;
     padding-top: 0.5em;
-    font-size: 1.3em;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+    font-size: 1.1em;
+    transition: all 0.5s; }
   .newsletter-content h2 {
     font-family: 'Pathway Gothic One', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    color: #DAA25A;
-    font-size: 1.25em; }
+    color: #B9C4CE;
+    font-size: 1.1em;
+    transition: all 0.5s; }
   .newsletter-content .button-holder {
     padding: 2.5em 0em 0em 0em; }
 
-.coming-soon {
+.calendar-holder .responsive-frame {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 15px; }
+  .calendar-holder .responsive-frame iframe {
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .calendar-holder .responsive-frame .calendar-desktop {
+    display: none; }
+  .calendar-holder .responsive-frame .calendar-mobile {
+    display: block; }
+
+.post-nav-bg {
+  padding: 2.5em 1em 2.5em 1em;
   background-color: #FAFAFA;
-  padding: 15em 0em 15em 0em;
-  text-align: center; }
-  .coming-soon p {
+  justify-content: space-between;
+  display: flex; }
+  .post-nav-bg a {
+    text-transform: uppercase;
     font-family: 'Pathway Gothic One', sans-serif;
     font-style: normal;
     font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #DAA25A;
+    transition: color 0.5s; }
+    .post-nav-bg a:hover {
+      color: #333E48;
+      transition: color 0.5s; }
+  .post-nav-bg .post-nav-link {
+    width: 100%; }
+  .post-nav-bg .previous {
+    text-align: left; }
+  .post-nav-bg .news-home {
+    text-align: center; }
+  .post-nav-bg .next {
+    text-align: right; }
+
+.post-holder {
+  background-color: white;
+  padding-bottom: 6em; }
+  .post-holder .post-body-top {
+    padding: 6em 0em 3.5em 0em; }
+    .post-holder .post-body-top .post-title {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2em;
+      text-align: center; }
+    .post-holder .post-body-top .post-date {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #DAA25A;
+      font-size: 1.3em;
+      text-transform: uppercase;
+      text-align: center; }
+  .post-holder .post-body p {
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #818181;
+    padding: 0.7em 0em 0.7em 0em;
+    line-height: 1.8em;
+    font-size: 1.1em; }
+  .post-holder .post-body i {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: inherit; }
+  .post-holder .post-body a {
+    color: #DAA25A;
+    transition: color 0.5s; }
+    .post-holder .post-body a:hover {
+      color: #333E48;
+      transition: color 0.5s; }
+  .post-holder .post-body blockquote {
+    border-left: 5px solid #eaeff2;
+    margin: 15px 0px 15px 0px; }
+    .post-holder .post-body blockquote p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.12em;
+      padding: 20px 35px 20px 35px; }
+  .post-holder .post-body hr {
+    background-color: #DAA25A;
+    border-bottom: 0;
+    padding: 0.1em;
+    display: block;
+    text-align: center;
+    max-width: 11%; }
+  .post-holder .post-body img {
+    display: block;
+    padding: 20px 0px 20px 0px;
+    margin: 0 auto; }
 
 .groups-title {
   font-size: 1.8em !important;
@@ -660,65 +825,470 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center; }
-
-.small-group-list {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  display: inline-block;
-  line-height: 1.35em;
-  font-size: 1em;
-  color: #818181;
-  padding-top: 1.4em; }
-  .small-group-list li:first-child {
-    font-family: 'Libre Baskerville', serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #333E48;
-    font-size: 1.1em; }
+    .small-group-outer .small-group-holder .small-group-list {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      display: inline-block;
+      line-height: 1.35em;
+      font-size: 1em;
+      color: #818181;
+      padding-top: 1.4em; }
+      .small-group-outer .small-group-holder .small-group-list li:first-child {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #333E48;
+        font-size: 1.1em; }
 
 .young-adult-groups {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-.current-study {
-  font-family: 'Libre Baskerville', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  padding: 1em 0em 0em 0em;
-  color: #333E48; }
-
-.outreach-header {
-  margin-top: 0.8em; }
+.current-study-outer {
+  padding: 1.5em 0em 0.6em 0em; }
+  .current-study-outer .current-study {
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #333E48; }
 
 .outreach-list {
   margin-top: 1.2em; }
 
-.coming-soon-page {
-  background-color: #f2f2f2;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: row; }
-  .coming-soon-page .coming-soon-text {
-    text-align: center; }
-    .coming-soon-page .coming-soon-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
+@media screen and (min-width: 768px) {
+  .main-nav-bg .nav-link-holder {
+    display: none; }
+  .arrow-show {
+    display: inline-block !important; }
+  .show-panel {
+    z-index: 105;
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition-timing-function: ease; }
+  .show-nav {
+    margin-top: 0em !important;
+    opacity: 1 !important;
+    transition: margin 0.5s, opacity 0.5s;
+    transition-timing-function: ease; }
+  .home-hero {
+    height: 50vh; }
+  .info-bg {
+    background-color: #F7F7F7;
+    padding: 5em 0em 5em 0em; }
+    .info-bg .row .service-times {
+      padding-bottom: 4em;
+      text-align: center; }
+      .info-bg .row .service-times ul:last-child {
+        padding-top: 5em; }
+    .info-bg .row .divider {
+      display: none; }
+    .info-bg .row .sermon-series {
+      float: none;
+      text-align: center; }
+      .info-bg .row .sermon-series ul li:last-child {
+        color: #DAA25A; }
+      .info-bg .row .sermon-series ul li h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem; }
+  .events-bg {
+    background-color: #fff;
+    height: 50vh; }
+    .events-bg .events-holder h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
       font-weight: 400;
-      font-size: 2em;
-      color: #818181; }
-    .coming-soon-page .coming-soon-text p {
-      color: #DAA25A;
-      padding-top: 4px; }
+      font-size: 1.4rem; }
+  .footer-bg {
+    background-color: #333E48;
+    height: 25vh; }
+    .footer-bg .row {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 15px 0 15px; }
+      .footer-bg .row .info-footer-holder {
+        color: #fff; }
+        .footer-bg .row .info-footer-holder li {
+          display: flex;
+          flex-direction: column;
+          text-align: center; }
+          .footer-bg .row .info-footer-holder li h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.15rem;
+            padding-bottom: 8px; }
+          .footer-bg .row .info-footer-holder li a {
+            display: block;
+            font-family: 'Libre Baskerville', serif;
+            font-style: normal;
+            font-weight: 400;
+            padding: 3px 0px 3px 0px;
+            font-size: 1rem;
+            color: #fff;
+            transition: color 0.5s; }
+            .footer-bg .row .info-footer-holder li a:hover {
+              color: #DAA25A;
+              transition: color 0.5s; }
+          .footer-bg .row .info-footer-holder li .number {
+            padding-right: 0px;
+            border-right: 0px;
+            order: 1; }
+          .footer-bg .row .info-footer-holder li .email {
+            padding-left: 0px;
+            order: -1; }
+      .footer-bg .row .facebook-icon {
+        color: #DAA25A;
+        margin-top: 8px;
+        transition: 0.5s color; }
+        .footer-bg .row .facebook-icon:hover {
+          color: #657380;
+          transition: 0.5s color; }
+  .about-hero {
+    height: 40vh; }
+    .about-hero .row {
+      text-align: center; }
+      .about-hero .row h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 400;
+        color: #333E48;
+        font-size: 2.5em; }
+      .about-hero .row h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-top: 5px;
+        color: #DAA25A;
+        font-size: 1.5em; }
+  .about-nav-bg {
+    display: none; }
+  .about-section-bg {
+    text-align: center;
+    padding: 3em 0em 6em 0em;
+    background-color: #fff; }
+    .about-section-bg .about-section {
+      padding-top: 2.8em; }
+      .about-section-bg .about-section h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2.2rem;
+        color: #333E48;
+        margin-top: 0.8em; }
+        .about-section-bg .about-section h1:first-of-type {
+          margin-top: 0; }
+      .about-section-bg .about-section h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: #DAA25A;
+        padding-bottom: 0.5em; }
+      .about-section-bg .about-section h3 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: #DAA25A;
+        padding: 1em 0em 0.3em 0em; }
+      .about-section-bg .about-section p {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #818181;
+        line-height: 1.5em;
+        padding-top: 1em;
+        font-size: 1rem; }
+      .about-section-bg .about-section a {
+        color: #DAA25A;
+        transition: color 0.5s; }
+        .about-section-bg .about-section a:hover {
+          color: #333E48;
+          transition: color 0.5s; }
+      .about-section-bg .about-section ol {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        list-style-type: upper-roman;
+        color: #818181;
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin-left: 1.7em;
+        margin-top: 0.9em;
+        display: inline-block; }
+        .about-section-bg .about-section ol li {
+          padding-left: 0.2em; }
+      .about-section-bg .about-section ul {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #818181;
+        font-size: 1rem;
+        line-height: 1.8em;
+        margin-top: 0.4em; }
+        .about-section-bg .about-section ul li {
+          padding: 0.1em 0em 0.1em 0em; }
+  .sanlo-purpose-holder {
+    text-align: center; }
+    .sanlo-purpose-holder .sanlo-purpose {
+      padding-top: 5em; }
+      .sanlo-purpose-holder .sanlo-purpose .purpose-desktop {
+        display: inline-block;
+        height: auto;
+        width: 85%; }
+      .sanlo-purpose-holder .sanlo-purpose .purpose-mobile {
+        display: none; }
+  .trinity-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0em 0.5em 0em; }
+    .trinity-holder .trinity-number {
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3em;
+      color: #D9D9D9;
+      padding-right: 15px; }
+    .trinity-holder .one {
+      padding-left: 2px; }
+  .staff-section-bg {
+    padding: 2em 0em 4em 0em;
+    background-color: #fff; }
+    .staff-section-bg .row {
+      padding-top: 3em; }
+      .staff-section-bg .row .staff-profile-holder {
+        text-align: center;
+        padding-bottom: 2em; }
+        .staff-section-bg .row .staff-profile-holder .staff-picture {
+          background-clip: content-box;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          background-color: #f2f2f2;
+          margin-bottom: 0.8em; }
+        .staff-section-bg .row .staff-profile-holder h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.2em;
+          color: #333E48; }
+        .staff-section-bg .row .staff-profile-holder h2 {
+          font-family: 'Pathway Gothic One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-size: 1.1em;
+          color: #DAA25A; }
+        .staff-section-bg .row .staff-profile-holder h3 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.8em;
+          color: #B9C4CE; }
+      .staff-section-bg .row .alpha-staff {
+        padding-right: 0.5rem; }
+      .staff-section-bg .row .omega-staff {
+        padding-left: 0.5rem; }
+  .news-section-bg {
+    padding: 4em 0em 5em 0em;
+    background-color: #fff; }
+    .news-section-bg .news-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .news-section-bg .news-section h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2.5rem;
+        color: #333E48;
+        text-align: center;
+        line-height: 1.1em;
+        margin-bottom: 0.1em; }
+      .news-section-bg .news-section h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: #DAA25A;
+        padding-bottom: 0.5em;
+        display: inline-block; }
+      .news-section-bg .news-section h3 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: #DAA25A;
+        padding: 1em 0em 0.5em 0em; }
+      .news-section-bg .news-section .see-all {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: #818181;
+        display: none;
+        align-self: flex-end; }
+        .news-section-bg .news-section .see-all:hover {
+          text-decoration: underline; }
+  .announcement-content {
+    margin: 1.4em 0em 4em 0em;
+    background-clip: padding-box; }
+    .announcement-content .announcement-block {
+      background-color: #FAFAFA;
+      background-clip: content-box;
+      margin: 0.5em 0em 0.5em 0em;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      height: 4em;
+      transition: background-color 0.5s;
+      flex-grow: 0;
+      flex-wrap: nowrap; }
+      .announcement-content .announcement-block:hover {
+        background-color: #f0f0f0;
+        transition: background-color 0.5s; }
+      .announcement-content .announcement-block .announcement-title {
+        text-overflow: ellipsis;
+        overflow: hidden; }
+        .announcement-content .announcement-block .announcement-title h1 {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          color: #333E48;
+          margin-left: 1.5em;
+          font-size: 1.1em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .announcement-content .announcement-block .announcement-date h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #DAA25A;
+        font-size: 1.25em;
+        align-self: center;
+        margin-right: 1.5em;
+        margin-left: 0.5em; }
+    .announcement-content .button-holder {
+      padding: 2.4em 0em 1em 0em; }
+  .button-holder {
+    display: flex;
+    justify-content: center; }
+  .newsletter-content {
+    margin: 1.4em 0em 0em 0em; }
+    .newsletter-content .newsletter-block {
+      display: inline-block;
+      padding-bottom: 2em;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .newsletter-content .newsletter-block:hover > h1 {
+        color: #42a5ff;
+        transition: all 0.5s; }
+      .newsletter-content .newsletter-block:hover > h2 {
+        transition: all 0.5s; }
+      .newsletter-content .newsletter-block .newsletter-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #f2f2f2;
+        overflow: hidden;
+        height: 13em; }
+    .newsletter-content h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #333E48;
+      padding-top: 0.5em;
+      font-size: 1.1em;
+      transition: all 0.5s; }
+    .newsletter-content h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      transition: all 0.5s; }
+    .newsletter-content .button-holder {
+      padding: 2.5em 0em 0em 0em; }
+  .calendar-holder .responsive-frame {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 15px; }
+    .calendar-holder .responsive-frame iframe {
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .calendar-holder .responsive-frame .calendar-desktop {
+      display: none; }
+    .calendar-holder .responsive-frame .calendar-mobile {
+      display: block; }
+  .groups-title {
+    font-size: 1.8em !important;
+    margin-top: 1em; }
+  .small-group-outer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+    .small-group-outer .small-group-holder {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; }
+      .small-group-outer .small-group-holder .small-group-list {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        display: inline-block;
+        line-height: 1.35em;
+        font-size: 1em;
+        color: #818181;
+        padding-top: 1.4em; }
+        .small-group-outer .small-group-holder .small-group-list li:first-child {
+          font-family: 'Libre Baskerville', serif;
+          font-style: normal;
+          font-weight: 400;
+          color: #333E48;
+          font-size: 1.1em; }
+  .young-adult-groups {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .current-study-outer {
+    padding: 1.5em 0em 0.6em 0em; }
+    .current-study-outer .current-study {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #333E48; }
+  .outreach-list {
+    margin-top: 1.2em; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1025px) {
   .break-hide {
     display: none; }
-
   .unordered-list {
     text-align: left;
     font-family: 'Libre Baskerville', serif;
@@ -727,8 +1297,7 @@ body {
     color: #818181;
     font-size: 1rem;
     line-height: 1.8em; }
-
-  .unordered-list-dashed {
+  .unordered-list-dashed ul {
     text-align: left;
     font-family: 'Libre Baskerville', serif;
     font-style: normal;
@@ -736,14 +1305,11 @@ body {
     color: #818181;
     font-size: 1rem;
     line-height: 1.7em; }
-
-  ul.unordered-list-dashed > li:before {
+  .unordered-list-dashed ul > li:before {
     content: "-";
     padding-right: 0.5em; }
-
   .menu-button {
     display: none; }
-
   .main-nav-bg {
     background-color: #fff;
     width: 100%;
@@ -808,19 +1374,14 @@ body {
             padding-top: 5px; }
         .main-nav-bg .nav-link-holder .main-nav-links li .nav-selected {
           color: #DAA25A !important; }
-
   #about-link {
     padding-right: 15px; }
-
   #ministries-link {
     padding-right: 15px; }
-
   .show-drop {
     display: block !important; }
-
   .mobile-nav-panel {
     display: none; }
-
   .home-hero {
     position: relative;
     background-color: #f2f2f2;
@@ -867,10 +1428,8 @@ body {
         display: block;
         height: 100vh;
         width: 100%; }
-
   .location-holder .row br {
     display: none; }
-
   .info-bg {
     background-color: #F7F7F7;
     height: 60vh;
@@ -932,7 +1491,6 @@ body {
           display: block;
           height: 2px;
           border: 0; }
-
   .footer-bg {
     background-color: #333E48;
     height: 25vh; }
@@ -945,29 +1503,62 @@ body {
       .footer-bg .row .info-footer-holder {
         width: 100%;
         color: #fff; }
-        .footer-bg .row .info-footer-holder li h1 {
-          font-family: 'Libre Baskerville', serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1.15rem;
-          padding-bottom: 8px; }
-        .footer-bg .row .info-footer-holder li a {
-          font-family: 'Libre Baskerville', serif;
-          font-style: normal;
-          font-weight: 400;
-          padding: 3px 0px 3px 0px;
-          font-size: 1rem;
-          color: #fff;
-          transition: color 0.5s; }
-          .footer-bg .row .info-footer-holder li a:hover {
-            color: #DAA25A;
+        .footer-bg .row .info-footer-holder li {
+          display: block;
+          text-align: left; }
+          .footer-bg .row .info-footer-holder li h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.15rem;
+            padding-bottom: 8px; }
+          .footer-bg .row .info-footer-holder li a {
+            display: inline-block;
+            font-family: 'Libre Baskerville', serif;
+            font-style: normal;
+            font-weight: 400;
+            padding: 3px 0px 3px 0px;
+            font-size: 1rem;
+            color: #fff;
             transition: color 0.5s; }
-        .footer-bg .row .info-footer-holder li .number {
-          padding-right: 15px;
-          border-right: 1px solid #DAA25A; }
-        .footer-bg .row .info-footer-holder li .email {
-          padding-left: 10px; }
-
+            .footer-bg .row .info-footer-holder li a:hover {
+              color: #DAA25A;
+              transition: color 0.5s; }
+          .footer-bg .row .info-footer-holder li .number {
+            padding-right: 15px;
+            border-right: 1px solid #DAA25A; }
+          .footer-bg .row .info-footer-holder li .email {
+            padding-left: 10px; }
+  #childrens-ministry-banner {
+    background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat 100% 78%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #youth-ministry-banner {
+    background: url(../img/banner/youth-ministry-banner.jpg) no-repeat 100% 13%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #young-adult-banner {
+    background: url(../img/banner/young-adult-banner.jpg) no-repeat 100% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #small-group-banner {
+    background: url(../img/banner/small-group-banner.jpg) no-repeat 100% 33%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #outreach-banner {
+    background: url(../img/banner/outreach-banner.jpg) no-repeat 100% 43%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
   .about-hero {
     padding-top: 4em;
     background-color: #f2f2f2;
@@ -988,7 +1579,6 @@ body {
         padding-top: 5px;
         color: #DAA25A;
         font-size: 1.5em; }
-
   .about-nav-bg {
     display: block;
     background-color: #333E48;
@@ -1012,12 +1602,23 @@ body {
         padding-right: 0em; }
       .about-nav-bg .about-nav-links li .about-selected {
         color: #fff; }
-
   .about-section-bg {
-    padding: 4.2em 0em 9em 0em;
+    padding: 3em 0em 9em 0em;
     background-color: #fff;
     text-align: left; }
-
+    .about-section-bg .about-section ol {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      list-style-type: upper-roman;
+      color: #818181;
+      font-size: 1rem;
+      line-height: 1.5em;
+      margin-left: 1.7em;
+      margin-top: 0.9em;
+      display: inline-block; }
+      .about-section-bg .about-section ol li {
+        padding-left: 0.2em; }
   .sanlo-purpose-holder {
     text-align: center; }
     .sanlo-purpose-holder .sanlo-purpose {
@@ -1028,7 +1629,6 @@ body {
         width: 100%; }
       .sanlo-purpose-holder .sanlo-purpose .purpose-mobile {
         display: none; }
-
   .trinity-holder {
     display: flex;
     flex-direction: row;
@@ -1043,7 +1643,6 @@ body {
       margin-top: -0.25em; }
     .trinity-holder .one {
       padding-right: 20px; }
-
   .staff-section-bg {
     padding: 3em 0em 5em 0em;
     background-color: #fff; }
@@ -1079,7 +1678,10 @@ body {
           font-weight: 400;
           font-size: 1em;
           color: #B9C4CE; }
-
+      .staff-section-bg .row .alpha-staff {
+        padding-right: .9375rem; }
+      .staff-section-bg .row .omega-staff {
+        padding-left: .9375rem; }
   .news-section-bg {
     padding: 4em 0em 5em 0em;
     background-color: #fff; }
@@ -1124,10 +1726,8 @@ body {
           align-self: center; }
           .news-section-bg .row .news-section .see-all:hover {
             text-decoration: underline; }
-
   .button-holder {
     display: none; }
-
   .announcement-content {
     margin: 1.4em 0em 4em 0em;
     background-clip: padding-box; }
@@ -1156,18 +1756,10 @@ body {
       align-self: center;
       margin-right: 1.5em;
       margin-left: 1.5em; }
-
   .newsletter-content {
     margin: 1.4em 0em 0em 0em; }
     .newsletter-content .newsletter-block {
-      display: inline-block;
-      padding-bottom: 2em; }
-      .newsletter-content .newsletter-block:hover > h1 {
-        color: #DAA25A;
-        text-decoration: underline; }
-      .newsletter-content .newsletter-block:hover > h2 {
-        color: #DAA25A;
-        text-decoration: underline; }
+      text-align: left; }
       .newsletter-content .newsletter-block .newsletter-img {
         background-size: cover;
         background-repeat: no-repeat;
@@ -1189,14 +1781,16 @@ body {
       font-style: normal;
       font-weight: 400;
       text-transform: uppercase;
-      color: #DAA25A;
       font-size: 1.1em; }
-
+  .calendar-holder .responsive-frame .calendar-desktop {
+    display: block; }
+  .calendar-holder .responsive-frame .calendar-mobile {
+    display: none; }
   .post-nav-bg {
     padding: 2.5em 2.5em 2.5em 2.5em;
     background-color: #FAFAFA;
-    display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    display: flex; }
     .post-nav-bg a {
       text-transform: uppercase;
       font-family: 'Pathway Gothic One', sans-serif;
@@ -1208,7 +1802,16 @@ body {
       .post-nav-bg a:hover {
         color: #333E48;
         transition: color 0.5s; }
-
+    .post-nav-bg .post-nav-link {
+      width: 100%; }
+    .post-nav-bg .previous {
+      display: inline-block;
+      text-align: left; }
+    .post-nav-bg .news-home {
+      text-align: center; }
+    .post-nav-bg .next {
+      display: inline-block;
+      text-align: right; }
   .post-holder {
     background-color: white;
     padding-bottom: 6em; }
@@ -1267,34 +1870,18 @@ body {
       display: block;
       padding: 20px 0px 20px 0px;
       margin: 0 auto; }
-
   .groups-title {
     font-size: 1.8em !important;
     margin-top: 1em; }
-
   .small-group-outer {
     display: flex;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: flex-start; }
     .small-group-outer .small-group-holder {
       display: flex;
       flex-flow: column wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 4.8em; }
-
-  .small-group-list {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    display: inline-block;
-    line-height: 1.35em;
-    font-size: 1em;
-    color: #818181;
-    padding-top: 1.4em; }
-    .small-group-list li:first-child {
-      font-family: 'Libre Baskerville', serif;
-      font-style: normal;
-      font-weight: 400;
-      color: #333E48;
-      font-size: 1.1em; } }
+      flex-grow: 1;
+      flex-shrink: 0; } }
