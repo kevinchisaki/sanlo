@@ -279,6 +279,10 @@
   					color: $sanlo-gold;
   					font-size: 1.5em;
   				}
+
+          br {
+            display: none;
+          }
   		}
   }
 
@@ -362,6 +366,23 @@
   }
 
   // Purpose Page
+
+  .sanlo-vision-holder {
+
+      .sanlo-vision {
+
+          .vision-desktop {
+            text-align: center;
+						display: inline-block;
+						height: auto;
+						width: 60%;
+          }
+
+          .vision-mobile {
+            display: none;
+          }
+      }
+  }
 
   	.sanlo-purpose-holder {
   		text-align: center;
@@ -562,7 +583,6 @@
           overflow: hidden;
           text-overflow: ellipsis;
   				&:hover > h1 {
-  					color: #42a5ff;
             transition: all 0.5s;
   				}
   				&:hover > h2 {
@@ -649,22 +669,6 @@
   				flex-flow: column wrap;
   				justify-content: center;
   				align-items: center;
-            .small-group-list {
-          		@include sourcesans-regular;
-          		display: inline-block;
-          		line-height: 1.35em;
-          		font-size: 1em;
-          		color: $sanlo-default;
-          		padding-top: 1.4em;
-          			li {
-
-          				&:first-child {
-          					@include baskerville-regular;
-          					color: $sanlo-navy;
-          					font-size: 1.1em;
-          				}
-          			}
-          	}
   			}
   	}
 

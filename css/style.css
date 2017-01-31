@@ -85,7 +85,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #DAA25A;
+  background: #eaa954;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -101,11 +101,11 @@ body {
   letter-spacing: 0.10em;
   padding: 15px 30px 15px 30px;
   display: inline-block;
-  border: 1.8px solid #DAA25A;
-  color: #DAA25A;
+  border: 1.8px solid #eaa954;
+  color: #eaa954;
   transition: background 0.5s, color 0.5s; }
   .sanlo-button:hover {
-    background-color: #DAA25A;
+    background-color: #eaa954;
     color: #fff !important;
     transition: background 0.5s, color 0.5s; }
 
@@ -148,66 +148,88 @@ body {
     font-style: normal;
     font-weight: 400;
     display: inline-block;
-    color: #333E48;
+    color: #324251;
     font-size: 1.1em;
     margin-top: 0px;
     transition: background 0.5s, color 0.5s; }
     .main-nav-bg .sanlo-logo a:hover {
-      color: #DAA25A;
+      color: #eaa954;
       transition: background 0.5s, color 0.5s; }
   .main-nav-bg .nav-link-holder {
     display: none; }
 
+.hidden {
+  opacity: 0;
+  display: none !important;
+  transition: all 0.5s ease;
+  transition-timing-function: ease; }
+
+.visible {
+  opacity: 1;
+  display: block !important;
+  transition: all 0.5s ease;
+  transition-timing-function: ease; }
+
+.arrow-show {
+  display: inline-block !important; }
+
 .mobile-nav-panel {
   background-color: rgba(255, 255, 255, 0.97);
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   position: fixed;
-  display: flex;
   opacity: 0;
   z-index: -100;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  transition: opacity 0.5s;
+  transition: all 0.5s ease;
   transition-timing-function: ease; }
   .mobile-nav-panel .mobile-nav-links {
     text-align: center;
     margin-top: -5em;
     opacity: 0;
-    transition: margin 0.5s, opacity 0.5s;
+    -webkit-transition: all 0.5s ease;
     transition-timing-function: ease; }
     .mobile-nav-panel .mobile-nav-links li {
-      margin: 1em 0em 1em 0em; }
+      margin: 1em 0em 1em 0em;
+      transition: all 0.5s ease;
+      transition-timing-function: ease; }
       .mobile-nav-panel .mobile-nav-links li a {
         display: block;
         font-family: 'Pathway Gothic One', sans-serif;
         font-style: normal;
         font-weight: 400;
         text-transform: uppercase;
-        color: #DAA25A;
+        color: #eaa954;
         font-size: 2em;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        transition-timing-function: ease; }
+      .mobile-nav-panel .mobile-nav-links li .back-arrow {
+        color: #eaa954 !important; }
+      .mobile-nav-panel .mobile-nav-links li .back-arrow-ministries {
+        color: #eaa954 !important; }
       .mobile-nav-panel .mobile-nav-links li .down-arrow {
         background-image: url("../img/home/arrow-down.svg");
         background-repeat: no-repeat;
         display: none;
         height: 9px;
-        width: 14px; }
+        width: 14px;
+        transition: all 0.5s ease; }
       .mobile-nav-panel .mobile-nav-links li .down-arrow-ministries {
         background-image: url("../img/home/arrow-down.svg");
         background-repeat: no-repeat;
         display: none;
         height: 9px;
-        width: 14px; }
+        width: 14px;
+        transition: all 0.5s ease; }
       .mobile-nav-panel .mobile-nav-links li .mobile-sub-nav {
-        margin: 0; }
+        display: none;
+        margin: 0;
+        transition: all 0.5s ease; }
         .mobile-nav-panel .mobile-nav-links li .mobile-sub-nav a {
-          font-size: 1.5em;
+          font-size: 1.8em;
           color: #CBCBCB; }
-
-.arrow-show {
-  display: inline-block !important; }
 
 .show-panel {
   z-index: 105;
@@ -294,7 +316,7 @@ body {
       font-weight: 400;
       font-size: 1.1rem; }
     .info-bg .row .service-times ul li hr {
-      background-color: #DAA25A;
+      background-color: #eaa954;
       max-width: 2.5em;
       margin-top: 0.8em;
       margin-bottom: 0.8em;
@@ -308,14 +330,14 @@ body {
   .info-bg .row .sermon-series {
     text-align: center; }
     .info-bg .row .sermon-series ul li:last-child {
-      color: #DAA25A; }
+      color: #eaa954; }
     .info-bg .row .sermon-series ul li h1 {
       font-family: 'Libre Baskerville', serif;
       font-style: normal;
       font-weight: 400;
       font-size: 1.4rem; }
     .info-bg .row .sermon-series ul li hr {
-      background-color: #DAA25A;
+      background-color: #eaa954;
       max-width: 2.5em;
       margin-top: 0.8em;
       margin-bottom: 0.8em;
@@ -333,7 +355,7 @@ body {
     font-size: 1.4rem; }
 
 .footer-bg {
-  background-color: #333E48;
+  background-color: #324251;
   height: 35vh; }
   .footer-bg .row {
     height: inherit;
@@ -364,7 +386,7 @@ body {
           color: #fff;
           transition: color 0.5s; }
           .footer-bg .row .info-footer-holder li a:hover {
-            color: #DAA25A;
+            color: #eaa954;
             transition: color 0.5s; }
         .footer-bg .row .info-footer-holder li .number {
           padding-right: 0px;
@@ -374,12 +396,61 @@ body {
           padding-left: 0px;
           order: -1; }
     .footer-bg .row .facebook-icon {
-      color: #DAA25A;
+      color: #eaa954;
       margin-top: 8px;
       transition: 0.5s color; }
       .footer-bg .row .facebook-icon:hover {
         color: #657380;
         transition: 0.5s color; }
+
+#purpose-banner {
+  background: url(../img/banner/purpose-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#beliefs-banner {
+  background: url(../img/banner/beliefs-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#history-banner {
+  background: url(../img/banner/history-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#what-to-expect-banner {
+  background: url(../img/banner/what-to-expect-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#staff-banner {
+  background: url(../img/banner/staff-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#news-banner {
+  background: url(../img/banner/news-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+#events-banner {
+  background: url(../img/banner/events-banner.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
 
 #childrens-ministry-banner {
   background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat center center;
@@ -429,7 +500,7 @@ body {
       font-family: 'Playfair Display', serif;
       font-style: italic;
       font-weight: 400;
-      color: #333E48;
+      color: #324251;
       font-size: 2.5em; }
     .about-hero .row h2 {
       font-family: 'Pathway Gothic One', sans-serif;
@@ -437,15 +508,17 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       padding-top: 5px;
-      color: #DAA25A;
+      color: #eaa954;
       font-size: 1.5em; }
+    .about-hero .row br {
+      display: block; }
 
 .about-nav-bg {
   display: none; }
 
 .about-section-bg {
   text-align: center;
-  padding: 1em 0em 9em 0em;
+  padding: 1em 0em 5em 0em;
   background-color: #fff; }
   .about-section-bg .about-section {
     padding-top: 2.8em; }
@@ -454,7 +527,7 @@ body {
       font-style: italic;
       font-weight: 400;
       font-size: 2.2rem;
-      color: #333E48;
+      color: #324251;
       margin-top: 0.8em; }
       .about-section-bg .about-section h1:first-of-type {
         margin-top: 0; }
@@ -464,7 +537,7 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       font-size: 1.3rem;
-      color: #DAA25A;
+      color: #eaa954;
       padding-bottom: 0.5em; }
     .about-section-bg .about-section h3 {
       font-family: 'Pathway Gothic One', sans-serif;
@@ -472,7 +545,7 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       font-size: 1.6rem;
-      color: #DAA25A;
+      color: #eaa954;
       padding: 1em 0em 0.3em 0em; }
     .about-section-bg .about-section p {
       font-family: 'Libre Baskerville', serif;
@@ -483,10 +556,10 @@ body {
       padding-top: 1em;
       font-size: 1rem; }
     .about-section-bg .about-section a {
-      color: #DAA25A;
+      color: #eaa954;
       transition: color 0.5s; }
       .about-section-bg .about-section a:hover {
-        color: #333E48;
+        color: #324251;
         transition: color 0.5s; }
     .about-section-bg .about-section ol {
       font-family: 'Libre Baskerville', serif;
@@ -512,6 +585,19 @@ body {
       .about-section-bg .about-section ul li {
         padding: 0.1em 0em 0.1em 0em; }
 
+.sanlo-vision-holder {
+  text-align: center; }
+  .sanlo-vision-holder .sanlo-vision {
+    padding-top: 3em;
+    padding-bottom: 3em; }
+    .sanlo-vision-holder .sanlo-vision .vision-desktop {
+      display: none; }
+    .sanlo-vision-holder .sanlo-vision .vision-mobile {
+      text-align: center;
+      display: inline-block;
+      height: auto;
+      width: 85%; }
+
 .sanlo-purpose-holder {
   text-align: center; }
   .sanlo-purpose-holder .sanlo-purpose {
@@ -520,7 +606,7 @@ body {
       display: none; }
     .sanlo-purpose-holder .sanlo-purpose .purpose-mobile {
       height: auto;
-      width: 50%; }
+      width: 43%; }
 
 .trinity-holder {
   display: flex;
@@ -557,14 +643,14 @@ body {
         font-style: normal;
         font-weight: 400;
         font-size: 1.2em;
-        color: #333E48; }
+        color: #324251; }
       .staff-section-bg .row .staff-profile-holder h2 {
         font-family: 'Pathway Gothic One', sans-serif;
         font-style: normal;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 1.1em;
-        color: #DAA25A; }
+        color: #eaa954; }
       .staff-section-bg .row .staff-profile-holder h3 {
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
@@ -588,7 +674,7 @@ body {
       font-style: italic;
       font-weight: 400;
       font-size: 2.5rem;
-      color: #333E48;
+      color: #324251;
       text-align: center;
       line-height: 1.1em;
       margin-bottom: 0.1em; }
@@ -598,7 +684,7 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       font-size: 1.3rem;
-      color: #DAA25A;
+      color: #eaa954;
       padding-bottom: 0.5em;
       display: inline-block; }
     .news-section-bg .news-section h3 {
@@ -607,7 +693,7 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       font-size: 1.6rem;
-      color: #DAA25A;
+      color: #eaa954;
       padding: 1em 0em 0.5em 0em; }
     .news-section-bg .news-section .see-all {
       font-family: 'Pathway Gothic One', sans-serif;
@@ -647,7 +733,7 @@ body {
         font-family: 'Libre Baskerville', serif;
         font-style: normal;
         font-weight: 400;
-        color: #333E48;
+        color: #324251;
         margin-left: 1.5em;
         font-size: 1.1em;
         white-space: nowrap;
@@ -657,7 +743,7 @@ body {
       font-family: 'Pathway Gothic One', sans-serif;
       font-style: normal;
       font-weight: 400;
-      color: #DAA25A;
+      color: #eaa954;
       font-size: 1.25em;
       align-self: center;
       margin-right: 1.5em;
@@ -678,10 +764,10 @@ body {
     overflow: hidden;
     text-overflow: ellipsis; }
     .newsletter-content .newsletter-block:hover > h1 {
-      color: #DAA25A;
+      color: #eaa954;
       transition: all 0.5s; }
     .newsletter-content .newsletter-block:hover > h2 {
-      color: #DAA25A;
+      color: #eaa954;
       transition: all 0.5s; }
     .newsletter-content .newsletter-block .newsletter-img {
       background-size: cover;
@@ -689,12 +775,12 @@ body {
       background-position: center center;
       background-color: #f2f2f2;
       overflow: hidden;
-      height: 13em; }
+      height: 15em; }
   .newsletter-content h1 {
     font-family: 'Libre Baskerville', serif;
     font-style: normal;
     font-weight: 400;
-    color: #333E48;
+    color: #324251;
     padding-top: 0.5em;
     font-size: 1.1em;
     transition: all 0.5s; }
@@ -709,23 +795,26 @@ body {
   .newsletter-content .button-holder {
     padding: 2.5em 0em 0em 0em; }
 
-.calendar-holder .responsive-frame {
-  position: relative;
-  padding-bottom: 75%;
-  height: 0;
-  overflow: hidden;
-  margin: 0 15px; }
-  .calendar-holder .responsive-frame iframe {
-    background-color: #f2f2f2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .calendar-holder .responsive-frame .calendar-desktop {
-    display: none; }
-  .calendar-holder .responsive-frame .calendar-mobile {
-    display: block; }
+.calendar-holder {
+  padding-top: 2em; }
+  .calendar-holder .responsive-frame {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 15px; }
+    .calendar-holder .responsive-frame iframe {
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .calendar-holder .responsive-frame .calendar-desktop {
+      display: none; }
+    .calendar-holder .responsive-frame .calendar-mobile {
+      margin-top: 3em;
+      display: block; }
 
 .post-nav-bg {
   padding: 2.5em 1em 2.5em 1em;
@@ -738,10 +827,10 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1.5em;
-    color: #DAA25A;
+    color: #eaa954;
     transition: color 0.5s; }
     .post-nav-bg a:hover {
-      color: #333E48;
+      color: #324251;
       transition: color 0.5s; }
   .post-nav-bg .post-nav-link {
     width: 100%; }
@@ -767,7 +856,7 @@ body {
       font-family: 'Pathway Gothic One', sans-serif;
       font-style: normal;
       font-weight: 400;
-      color: #DAA25A;
+      color: #eaa954;
       font-size: 1.3em;
       text-transform: uppercase;
       text-align: center; }
@@ -785,10 +874,10 @@ body {
     font-weight: 400;
     font-size: inherit; }
   .post-holder .post-body a {
-    color: #DAA25A;
+    color: #eaa954;
     transition: color 0.5s; }
     .post-holder .post-body a:hover {
-      color: #333E48;
+      color: #324251;
       transition: color 0.5s; }
   .post-holder .post-body blockquote {
     border-left: 5px solid #eaeff2;
@@ -800,7 +889,7 @@ body {
       font-size: 1.12em;
       padding: 20px 35px 20px 35px; }
   .post-holder .post-body hr {
-    background-color: #DAA25A;
+    background-color: #eaa954;
     border-bottom: 0;
     padding: 0.1em;
     display: block;
@@ -825,21 +914,21 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center; }
-    .small-group-outer .small-group-holder .small-group-list {
-      font-family: 'Source Sans Pro', sans-serif;
+  .small-group-outer .small-group-list ul {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1.35em !important;
+    font-size: 1em;
+    color: #818181;
+    padding-top: 1.4em; }
+    .small-group-outer .small-group-list ul li:first-child {
+      font-family: 'Libre Baskerville', serif;
       font-style: normal;
       font-weight: 400;
-      display: inline-block;
-      line-height: 1.35em;
-      font-size: 1em;
-      color: #818181;
-      padding-top: 1.4em; }
-      .small-group-outer .small-group-holder .small-group-list li:first-child {
-        font-family: 'Libre Baskerville', serif;
-        font-style: normal;
-        font-weight: 400;
-        color: #333E48;
-        font-size: 1.1em; }
+      color: #324251;
+      font-size: 1.1em; }
 
 .young-adult-groups {
   margin-top: 1em;
@@ -852,7 +941,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1.4rem;
-    color: #333E48; }
+    color: #324251; }
 
 .outreach-list {
   margin-top: 1.2em; }
@@ -888,7 +977,7 @@ body {
       float: none;
       text-align: center; }
       .info-bg .row .sermon-series ul li:last-child {
-        color: #DAA25A; }
+        color: #eaa954; }
       .info-bg .row .sermon-series ul li h1 {
         font-family: 'Libre Baskerville', serif;
         font-style: normal;
@@ -903,7 +992,7 @@ body {
       font-weight: 400;
       font-size: 1.4rem; }
   .footer-bg {
-    background-color: #333E48;
+    background-color: #324251;
     height: 25vh; }
     .footer-bg .row {
       height: inherit;
@@ -934,7 +1023,7 @@ body {
             color: #fff;
             transition: color 0.5s; }
             .footer-bg .row .info-footer-holder li a:hover {
-              color: #DAA25A;
+              color: #eaa954;
               transition: color 0.5s; }
           .footer-bg .row .info-footer-holder li .number {
             padding-right: 0px;
@@ -944,7 +1033,7 @@ body {
             padding-left: 0px;
             order: -1; }
       .footer-bg .row .facebook-icon {
-        color: #DAA25A;
+        color: #eaa954;
         margin-top: 8px;
         transition: 0.5s color; }
         .footer-bg .row .facebook-icon:hover {
@@ -958,7 +1047,7 @@ body {
         font-family: 'Playfair Display', serif;
         font-style: italic;
         font-weight: 400;
-        color: #333E48;
+        color: #324251;
         font-size: 2.5em; }
       .about-hero .row h2 {
         font-family: 'Pathway Gothic One', sans-serif;
@@ -966,8 +1055,10 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         padding-top: 5px;
-        color: #DAA25A;
+        color: #eaa954;
         font-size: 1.5em; }
+      .about-hero .row br {
+        display: none; }
   .about-nav-bg {
     display: none; }
   .about-section-bg {
@@ -981,7 +1072,7 @@ body {
         font-style: italic;
         font-weight: 400;
         font-size: 2.2rem;
-        color: #333E48;
+        color: #324251;
         margin-top: 0.8em; }
         .about-section-bg .about-section h1:first-of-type {
           margin-top: 0; }
@@ -991,7 +1082,7 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 1.3rem;
-        color: #DAA25A;
+        color: #eaa954;
         padding-bottom: 0.5em; }
       .about-section-bg .about-section h3 {
         font-family: 'Pathway Gothic One', sans-serif;
@@ -999,7 +1090,7 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 1.6rem;
-        color: #DAA25A;
+        color: #eaa954;
         padding: 1em 0em 0.3em 0em; }
       .about-section-bg .about-section p {
         font-family: 'Libre Baskerville', serif;
@@ -1010,10 +1101,10 @@ body {
         padding-top: 1em;
         font-size: 1rem; }
       .about-section-bg .about-section a {
-        color: #DAA25A;
+        color: #eaa954;
         transition: color 0.5s; }
         .about-section-bg .about-section a:hover {
-          color: #333E48;
+          color: #324251;
           transition: color 0.5s; }
       .about-section-bg .about-section ol {
         font-family: 'Libre Baskerville', serif;
@@ -1038,6 +1129,13 @@ body {
         margin-top: 0.4em; }
         .about-section-bg .about-section ul li {
           padding: 0.1em 0em 0.1em 0em; }
+  .sanlo-vision-holder .sanlo-vision .vision-desktop {
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    width: 60%; }
+  .sanlo-vision-holder .sanlo-vision .vision-mobile {
+    display: none; }
   .sanlo-purpose-holder {
     text-align: center; }
     .sanlo-purpose-holder .sanlo-purpose {
@@ -1082,14 +1180,14 @@ body {
           font-style: normal;
           font-weight: 400;
           font-size: 1.2em;
-          color: #333E48; }
+          color: #324251; }
         .staff-section-bg .row .staff-profile-holder h2 {
           font-family: 'Pathway Gothic One', sans-serif;
           font-style: normal;
           font-weight: 400;
           text-transform: uppercase;
           font-size: 1.1em;
-          color: #DAA25A; }
+          color: #eaa954; }
         .staff-section-bg .row .staff-profile-holder h3 {
           font-family: 'Source Sans Pro', sans-serif;
           font-style: normal;
@@ -1112,7 +1210,7 @@ body {
         font-style: italic;
         font-weight: 400;
         font-size: 2.5rem;
-        color: #333E48;
+        color: #324251;
         text-align: center;
         line-height: 1.1em;
         margin-bottom: 0.1em; }
@@ -1122,7 +1220,7 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 1.3rem;
-        color: #DAA25A;
+        color: #eaa954;
         padding-bottom: 0.5em;
         display: inline-block; }
       .news-section-bg .news-section h3 {
@@ -1131,7 +1229,7 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         font-size: 1.6rem;
-        color: #DAA25A;
+        color: #eaa954;
         padding: 1em 0em 0.5em 0em; }
       .news-section-bg .news-section .see-all {
         font-family: 'Pathway Gothic One', sans-serif;
@@ -1170,7 +1268,7 @@ body {
           font-family: 'Libre Baskerville', serif;
           font-style: normal;
           font-weight: 400;
-          color: #333E48;
+          color: #324251;
           margin-left: 1.5em;
           font-size: 1.1em;
           white-space: nowrap;
@@ -1180,7 +1278,7 @@ body {
         font-family: 'Pathway Gothic One', sans-serif;
         font-style: normal;
         font-weight: 400;
-        color: #DAA25A;
+        color: #eaa954;
         font-size: 1.25em;
         align-self: center;
         margin-right: 1.5em;
@@ -1199,7 +1297,6 @@ body {
       overflow: hidden;
       text-overflow: ellipsis; }
       .newsletter-content .newsletter-block:hover > h1 {
-        color: #42a5ff;
         transition: all 0.5s; }
       .newsletter-content .newsletter-block:hover > h2 {
         transition: all 0.5s; }
@@ -1214,7 +1311,7 @@ body {
       font-family: 'Libre Baskerville', serif;
       font-style: normal;
       font-weight: 400;
-      color: #333E48;
+      color: #324251;
       padding-top: 0.5em;
       font-size: 1.1em;
       transition: all 0.5s; }
@@ -1257,21 +1354,6 @@ body {
       flex-flow: column wrap;
       justify-content: center;
       align-items: center; }
-      .small-group-outer .small-group-holder .small-group-list {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        display: inline-block;
-        line-height: 1.35em;
-        font-size: 1em;
-        color: #818181;
-        padding-top: 1.4em; }
-        .small-group-outer .small-group-holder .small-group-list li:first-child {
-          font-family: 'Libre Baskerville', serif;
-          font-style: normal;
-          font-weight: 400;
-          color: #333E48;
-          font-size: 1.1em; }
   .young-adult-groups {
     margin-top: 1em;
     margin-bottom: 1em; }
@@ -1282,7 +1364,7 @@ body {
       font-style: normal;
       font-weight: 400;
       font-size: 1.4rem;
-      color: #333E48; }
+      color: #324251; }
   .outreach-list {
     margin-top: 1.2em; } }
 
@@ -1322,12 +1404,12 @@ body {
       font-style: normal;
       font-weight: 400;
       display: inline-block;
-      color: #333E48;
+      color: #324251;
       font-size: 1.3em;
       margin-top: 10px;
       transition: background 0.5s, color 0.5s; }
       .main-nav-bg .sanlo-logo a:hover {
-        color: #DAA25A;
+        color: #eaa954;
         transition: background 0.5s, color 0.5s; }
     .main-nav-bg .menu-button {
       display: none; }
@@ -1362,7 +1444,7 @@ body {
           transition: color 0.2s;
           padding: 1.5rem 0rem 1.5rem 2rem; }
           .main-nav-bg .nav-link-holder .main-nav-links li a:hover {
-            color: #DAA25A;
+            color: #eaa954;
             transition: color 0.2s; }
           .main-nav-bg .nav-link-holder .main-nav-links li a span {
             position: absolute;
@@ -1373,7 +1455,7 @@ body {
             padding-left: 5px;
             padding-top: 5px; }
         .main-nav-bg .nav-link-holder .main-nav-links li .nav-selected {
-          color: #DAA25A !important; }
+          color: #eaa954 !important; }
   #about-link {
     padding-right: 15px; }
   #ministries-link {
@@ -1420,9 +1502,12 @@ body {
       display: block;
       height: 100vh;
       max-height: 100vh;
-      z-index: -100; }
+      z-index: -100;
+      width: 100%; }
       .home-hero .video-holder .sanlo-loop {
         object-fit: cover;
+        -webkit-object-fit: cover;
+        -moz-object-fit: cover;
         min-height: 300px;
         max-height: 100vh;
         display: block;
@@ -1452,7 +1537,7 @@ body {
           font-weight: 400;
           font-size: 1.1rem; }
         .info-bg .row .service-times ul li hr {
-          background-color: #DAA25A;
+          background-color: #eaa954;
           max-width: 2.5em;
           margin-top: 0.8em;
           margin-bottom: 0.8em;
@@ -1466,9 +1551,6 @@ body {
         background-color: #DDDDDD;
         border-bottom: 3.8em solid #f7f7f7;
         border-top: 3.8em solid #f7f7f7;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
         height: inherit;
         width: 2px;
         left: 0;
@@ -1477,14 +1559,14 @@ body {
         text-align: center;
         padding: 0; }
         .info-bg .row .sermon-series ul li:last-child {
-          color: #DAA25A; }
+          color: #eaa954; }
         .info-bg .row .sermon-series ul li h1 {
           font-family: 'Libre Baskerville', serif;
           font-style: normal;
           font-weight: 400;
           font-size: 1.4rem; }
         .info-bg .row .sermon-series ul li hr {
-          background-color: #DAA25A;
+          background-color: #eaa954;
           max-width: 2.5em;
           margin-top: 0.8em;
           margin-bottom: 0.8em;
@@ -1492,7 +1574,7 @@ body {
           height: 2px;
           border: 0; }
   .footer-bg {
-    background-color: #333E48;
+    background-color: #324251;
     height: 25vh; }
     .footer-bg .row {
       height: inherit;
@@ -1522,13 +1604,55 @@ body {
             color: #fff;
             transition: color 0.5s; }
             .footer-bg .row .info-footer-holder li a:hover {
-              color: #DAA25A;
+              color: #eaa954;
               transition: color 0.5s; }
           .footer-bg .row .info-footer-holder li .number {
             padding-right: 15px;
-            border-right: 1px solid #DAA25A; }
+            border-right: 1px solid #eaa954; }
           .footer-bg .row .info-footer-holder li .email {
             padding-left: 10px; }
+  #purpose-banner {
+    background: url(../img/banner/purpose-banner.jpg) no-repeat center 42%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #beliefs-banner {
+    background: url(../img/banner/beliefs-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #history-banner {
+    background: url(../img/banner/history-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #what-to-expect-banner {
+    background: url(../img/banner/what-to-expect-banner.jpg) no-repeat center 60%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #staff-banner {
+    background: url(../img/banner/staff-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #news-banner {
+    background: url(../img/banner/news-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  #events-banner {
+    background: url(../img/banner/events-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
   #childrens-ministry-banner {
     background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat 100% 78%;
     -webkit-background-size: cover;
@@ -1569,7 +1693,7 @@ body {
         font-family: 'Playfair Display', serif;
         font-style: italic;
         font-weight: 400;
-        color: #333E48;
+        color: #324251;
         font-size: 3em; }
       .about-hero .row h2 {
         font-family: 'Pathway Gothic One', sans-serif;
@@ -1577,11 +1701,13 @@ body {
         font-weight: 400;
         text-transform: uppercase;
         padding-top: 5px;
-        color: #DAA25A;
+        color: #eaa954;
         font-size: 1.5em; }
+      .about-hero .row br {
+        display: none; }
   .about-nav-bg {
     display: block;
-    background-color: #333E48;
+    background-color: #324251;
     text-align: center; }
     .about-nav-bg .about-nav-links li {
       display: inline-block;
@@ -1619,6 +1745,18 @@ body {
       display: inline-block; }
       .about-section-bg .about-section ol li {
         padding-left: 0.2em; }
+  .sanlo-vision-holder {
+    text-align: center; }
+    .sanlo-vision-holder .sanlo-vision {
+      padding-top: 3em;
+      padding-bottom: 3em; }
+      .sanlo-vision-holder .sanlo-vision .vision-desktop {
+        text-align: center;
+        display: inline-block;
+        height: auto;
+        width: 70%; }
+      .sanlo-vision-holder .sanlo-vision .vision-mobile {
+        display: none; }
   .sanlo-purpose-holder {
     text-align: center; }
     .sanlo-purpose-holder .sanlo-purpose {
@@ -1664,14 +1802,14 @@ body {
           font-style: normal;
           font-weight: 400;
           font-size: 1.3em;
-          color: #333E48; }
+          color: #324251; }
         .staff-section-bg .row .staff-profile-holder h2 {
           font-family: 'Pathway Gothic One', sans-serif;
           font-style: normal;
           font-weight: 400;
           text-transform: uppercase;
           font-size: 1.2em;
-          color: #DAA25A; }
+          color: #eaa954; }
         .staff-section-bg .row .staff-profile-holder h3 {
           font-family: 'Source Sans Pro', sans-serif;
           font-style: normal;
@@ -1696,7 +1834,7 @@ body {
           font-style: italic;
           font-weight: 400;
           font-size: 2.5rem;
-          color: #333E48; }
+          color: #324251; }
         .news-section-bg .row .news-section h2 {
           font-family: 'Pathway Gothic One', sans-serif;
           font-style: normal;
@@ -1704,7 +1842,7 @@ body {
           text-transform: uppercase;
           padding-bottom: 0px;
           font-size: 1.3rem;
-          color: #DAA25A;
+          color: #eaa954;
           display: inline-block;
           align-self: center; }
         .news-section-bg .row .news-section h3 {
@@ -1713,7 +1851,7 @@ body {
           font-weight: 400;
           text-transform: uppercase;
           font-size: 1.6rem;
-          color: #DAA25A;
+          color: #eaa954;
           padding: 1em 0em 0.5em 0em; }
         .news-section-bg .row .news-section .see-all {
           font-family: 'Pathway Gothic One', sans-serif;
@@ -1741,7 +1879,7 @@ body {
         font-family: 'Libre Baskerville', serif;
         font-style: normal;
         font-weight: 400;
-        color: #333E48;
+        color: #324251;
         margin-left: 1.5em;
         font-size: 1.1em;
         white-space: nowrap;
@@ -1751,7 +1889,7 @@ body {
       font-family: 'Pathway Gothic One', sans-serif;
       font-style: normal;
       font-weight: 400;
-      color: #DAA25A;
+      color: #eaa954;
       font-size: 1.25em;
       align-self: center;
       margin-right: 1.5em;
@@ -1771,7 +1909,7 @@ body {
       font-family: 'Libre Baskerville', serif;
       font-style: normal;
       font-weight: 400;
-      color: #333E48;
+      color: #324251;
       padding-top: 0.5em;
       font-size: 1.1em;
       overflow: hidden;
@@ -1797,10 +1935,10 @@ body {
       font-style: normal;
       font-weight: 400;
       font-size: 1.5em;
-      color: #DAA25A;
+      color: #eaa954;
       transition: color 0.5s; }
       .post-nav-bg a:hover {
-        color: #333E48;
+        color: #324251;
         transition: color 0.5s; }
     .post-nav-bg .post-nav-link {
       width: 100%; }
@@ -1827,7 +1965,7 @@ body {
         font-family: 'Pathway Gothic One', sans-serif;
         font-style: normal;
         font-weight: 400;
-        color: #DAA25A;
+        color: #eaa954;
         font-size: 1.3em;
         text-transform: uppercase;
         text-align: center; }
@@ -1845,10 +1983,10 @@ body {
       font-weight: 400;
       font-size: inherit; }
     .post-holder .post-body a {
-      color: #DAA25A;
+      color: #eaa954;
       transition: color 0.5s; }
       .post-holder .post-body a:hover {
-        color: #333E48;
+        color: #324251;
         transition: color 0.5s; }
     .post-holder .post-body blockquote {
       border-left: 5px solid #eaeff2;
@@ -1860,7 +1998,7 @@ body {
         font-size: 1.12em;
         padding: 20px 35px 20px 35px; }
     .post-holder .post-body hr {
-      background-color: #DAA25A;
+      background-color: #eaa954;
       border-bottom: 0;
       padding: 0.1em;
       display: block;

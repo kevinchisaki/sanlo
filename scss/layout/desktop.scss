@@ -186,11 +186,14 @@
 			.video-holder {
 				position: absolute;
 				display: block;
-			    height: 100vh;
-			    max-height: 100vh;
-			    z-index: -100;
+			  height: 100vh;
+			  max-height: 100vh;
+			  z-index: -100;
+				width: 100%;
 					.sanlo-loop {
 						object-fit: cover;
+						-webkit-object-fit: cover;
+						-moz-object-fit: cover;
 					    min-height: 300px;
 					    max-height: 100vh;
 					    display: block;
@@ -262,9 +265,6 @@
 					background-color: #DDDDDD;
 					border-bottom: 3.8em solid #f7f7f7;
 					border-top: 3.8em solid #f7f7f7;
-					position: absolute;
-					margin-left: auto;
-					margin-right: auto;
 					height: inherit;
 					width: 2px;
 					left: 0;
@@ -354,6 +354,62 @@
 
 	// banner backgrounds
 
+	#purpose-banner {
+	  background: url(../img/banner/purpose-banner.jpg) no-repeat center 42%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#beliefs-banner {
+	  background: url(../img/banner/beliefs-banner.jpg) no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#history-banner {
+	  background: url(../img/banner/history-banner.jpg) no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#what-to-expect-banner {
+	  background: url(../img/banner/what-to-expect-banner.jpg) no-repeat center 60%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#staff-banner {
+	  background: url(../img/banner/staff-banner.jpg) no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#news-banner {
+	  background: url(../img/banner/news-banner.jpg) no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
+	#events-banner {
+	  background: url(../img/banner/events-banner.jpg) no-repeat center center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  background-color: #f2f2f2;
+	}
+
 	#childrens-ministry-banner {
 	  background: url(../img/banner/childrens-ministry-banner.jpg) no-repeat 100% 78%;
 	  -webkit-background-size: cover;
@@ -415,6 +471,10 @@
 						color: $sanlo-gold;
 						font-size: 1.5em;
 					}
+
+					br {
+						display: none;
+					}
 			}
 	}
 
@@ -473,6 +533,25 @@
 	}
 
 	// Purpose Page
+
+	.sanlo-vision-holder {
+		text-align: center;
+			.sanlo-vision {
+				padding-top: 3em;
+				padding-bottom: 3em;
+
+					.vision-desktop {
+						text-align: center;
+						display: inline-block;
+						height: auto;
+						width: 70%;
+					}
+
+					.vision-mobile {
+						display: none;
+					}
+			}
+	}
 
 	.sanlo-purpose-holder {
 		text-align: center;

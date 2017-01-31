@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    /* jshint ignore:start */
     var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
 
     var hamburgers = document.querySelectorAll(".hamburger");
@@ -10,41 +10,53 @@ $(document).ready(function(){
         }, false);
       });
     }
-
+    /* jshint ignore:end */
 });
 
 $(document).ready(function(){
 
-    $(".menu-button").click(
-      function() {
-        $('.mobile-nav-panel').toggleClass('show-panel');
-        $('.mobile-nav-links').toggleClass('show-nav');
-      }
-    );
+  $(".menu-button").click(
+    function() {
+      $('.mobile-nav-panel').toggleClass('show-panel');
+      $('.mobile-nav-links').toggleClass('show-nav');
+    }
+  );
 
-    $('.mobile-sub-nav').hide();
+  $('#about-mobile').click(
+    function() {
+      $('.core-link').not(this).addClass('hidden');
+      $('.down-arrow').addClass('arrow-show');
+      $("#about-mobile-nav").addClass('visible');
+    }
+  );
 
-    $('#about-mobile').click(
-      function() {
-        $('.down-arrow').toggleClass('arrow-show');
+  $('.back-arrow').click(
+    function() {
+      $('.core-link').not(this).removeClass('hidden');
+      $('.down-arrow').removeClass('arrow-show');
+      $("#about-mobile-nav").removeClass('visible');
+    }
+  );
 
-        $("#about-mobile-nav").animate({
-          height: 'toggle'},
-         {easing: 'easeOutQuint',
-          duration: 1000});
-      }
-    );
+  $('#ministries-mobile').click(
+    function() {
+      $('.core-link').not(this).addClass('hidden');
+      $('.down-arrow-ministries').addClass('arrow-show');
+      $("#ministries-mobile-nav").addClass('visible');
+    }
+  );
 
-    $('#ministries-mobile').click(
-      function() {
-        $('.down-arrow-ministries').toggleClass('arrow-show');
+  $('.back-arrow-ministries').click(
+    function() {
+      $('.core-link').not(this).removeClass('hidden');
+      $('.down-arrow-ministries').removeClass('arrow-show');
+      $("#ministries-mobile-nav").removeClass('visible');
+    }
+  );
 
-        $("#ministries-mobile-nav").animate({
-          height: 'toggle'},
-         {easing: 'easeOutQuint',
-          duration: 1000});
-      }
-    );
+});
+
+$(document).ready(function(){
 
     $('#about-link, #about-panel').mouseenter(function() {
       $('#about-link').addClass('nav-selected');

@@ -215,11 +215,43 @@
 		"oAP": "\/history.html",
 		"oF": 0
 		},
+	"\/img\/banner\/beliefs-banner.jpg": {
+		"ft": 16384,
+		"iS": 871455,
+		"oA": 0,
+		"oAP": "\/img\/banner\/beliefs-banner.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/banner\/childrens-ministry-banner.jpg": {
 		"ft": 16384,
 		"iS": 166041,
 		"oA": 0,
 		"oAP": "\/img\/banner\/childrens-ministry-banner.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/banner\/events-banner.jpg": {
+		"ft": 16384,
+		"iS": 197426,
+		"oA": 0,
+		"oAP": "\/img\/banner\/events-banner.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/banner\/history-banner.jpg": {
+		"ft": 16384,
+		"iS": 2478618,
+		"oA": 0,
+		"oAP": "\/img\/banner\/history-banner.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/banner\/news-banner.jpg": {
+		"ft": 16384,
+		"iS": 750995,
+		"oA": 0,
+		"oAP": "\/img\/banner\/news-banner.jpg",
 		"oF": 0,
 		"opt": 1
 		},
@@ -263,6 +295,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/banner\/originals\/IMG_3508.JPG": {
+		"ft": 16384,
+		"iS": 6086513,
+		"oA": 0,
+		"oAP": "\/img\/banner\/originals\/IMG_3508.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/banner\/originals\/IMG_3517.JPG": {
+		"ft": 16384,
+		"iS": 9323481,
+		"oA": 0,
+		"oAP": "\/img\/banner\/originals\/IMG_3517.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/banner\/outreach-banner.jpg": {
 		"ft": 16384,
 		"iS": 141239,
@@ -271,11 +319,27 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/banner\/purpose-banner.jpg": {
+		"ft": 16384,
+		"iS": 418115,
+		"oA": 0,
+		"oAP": "\/img\/banner\/purpose-banner.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/banner\/small-group-banner.jpg": {
 		"ft": 16384,
 		"iS": 330593,
 		"oA": 0,
 		"oAP": "\/img\/banner\/small-group-banner.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/banner\/what-to-expect-banner.jpg": {
+		"ft": 16384,
+		"iS": 355686,
+		"oA": 0,
+		"oAP": "\/img\/banner\/what-to-expect-banner.jpg",
 		"oF": 0,
 		"opt": 1
 		},
@@ -328,6 +392,22 @@
 		"oAP": "\/img\/home\/sanlo-purpose.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/img\/home\/sanlo-vision-mobile.png": {
+		"ft": 32768,
+		"iS": 198143,
+		"oA": 0,
+		"oAP": "\/img\/home\/sanlo-vision-mobile.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/home\/sanlo-vision.png": {
+		"ft": 32768,
+		"iS": 172095,
+		"oA": 0,
+		"oAP": "\/img\/home\/sanlo-vision.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/img\/staff\/brian-profile_square.jpg": {
 		"ft": 16384,
