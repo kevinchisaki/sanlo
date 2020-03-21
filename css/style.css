@@ -99,7 +99,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  padding: 15px 30px 15px 30px;
+  padding: 15px 15px 15px 15px;
   display: inline-block;
   border: 1.8px solid #eaa954;
   color: #eaa954;
@@ -108,6 +108,15 @@ body {
     background-color: #eaa954;
     color: #fff !important;
     transition: background 0.5s, color 0.5s; }
+
+.grow-button-2 {
+  margin-top: 1em;
+  margin-bottom: 2.5em; }
+
+.grow-button-3 {
+  margin-top: 2em;
+  margin-left: 0.35em;
+  margin-right: 0.35em; }
 
 .ministry-button {
   margin: 1.5em 0em 0em 0em; }
@@ -287,6 +296,29 @@ body {
     opacity: 0.8; }
   .home-hero .video-holder {
     display: none; }
+
+.grow-sanlo-home {
+  text-align: center;
+  padding: 2.5em 0em 2.5em 0em;
+  background-image: url("../img/home/grow-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #75DF7D; }
+  .grow-sanlo-home .row a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #4AC153;
+    background-color: #fff;
+    padding: 1em 3em 1em 3em;
+    border-radius: 100px;
+    transition: all 0.3s; }
+    .grow-sanlo-home .row a:hover {
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+      transition: all 0.3s; }
 
 .location-holder {
   background-color: #fff;
@@ -486,6 +518,105 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   background-color: #f2f2f2; }
+
+#grow-banner {
+  background: url(../img/banner/grow-banner.jpg) no-repeat 100% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+.grow-hero {
+  padding-top: 2em;
+  background-color: #f2f2f2;
+  height: 75vh; }
+  .grow-hero .row {
+    height: inherit; }
+    .grow-hero .row .grow-logo-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      height: inherit; }
+      .grow-hero .row .grow-logo-holder .grow-logo {
+        display: inline-block;
+        height: 250px;
+        width: auto; }
+
+#grow-title {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #147E46; }
+
+.grow-section-bg {
+  text-align: center;
+  padding: 4em 0em 5em 0em; }
+  .grow-section-bg .grow-section {
+    padding-top: 2.8em; }
+    .grow-section-bg .grow-section h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #147E46;
+      font-size: 2em; }
+    .grow-section-bg .grow-section h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      color: #eaa954;
+      padding-top: 0.2em;
+      padding-bottom: 2em; }
+    .grow-section-bg .grow-section h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #147E46;
+      font-size: 1.2em;
+      padding-top: 1.5em; }
+    .grow-section-bg .grow-section p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-weight: 400;
+      padding: 1em 0em 1.5em 0em;
+      color: #818181; }
+    .grow-section-bg .grow-section h4 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      color: #eaa954; }
+      .grow-section-bg .grow-section h4:first-of-type {
+        margin-top: 1em; }
+    .grow-section-bg .grow-section .grow-values-desktop {
+      display: none; }
+    .grow-section-bg .grow-section .grow-values-mobile {
+      display: inline-block;
+      width: 40%;
+      height: auto; }
+    .grow-section-bg .grow-section a {
+      color: #eaa954;
+      transition: color 0.5s;
+      margin-top: 2em; }
+      .grow-section-bg .grow-section a:hover {
+        color: #324251;
+        transition: color 0.5s; }
+    .grow-section-bg .grow-section hr {
+      background-color: #eaa954;
+      border-bottom: 0;
+      padding: 0.1em;
+      display: block;
+      text-align: center;
+      max-width: 11%;
+      margin-bottom: 2em; }
+    .grow-section-bg .grow-section .vimeo-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2em 0em 4em 0em; }
 
 .about-hero {
   padding-top: 3.8em;
@@ -1366,11 +1497,31 @@ body {
       font-size: 1.4rem;
       color: #324251; }
   .outreach-list {
-    margin-top: 1.2em; } }
+    margin-top: 1.2em; }
+  .grow-section-bg .grow-section .grow-values-desktop {
+    display: inline-block;
+    padding: 2em 0em 2em 0em; }
+  .grow-section-bg .grow-section .grow-values-mobile {
+    display: none; } }
 
 @media screen and (min-width: 1025px) {
   .break-hide {
     display: none; }
+  .sanlo-button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    padding: 15px 30px 15px 30px;
+    display: inline-block;
+    border: 1.8px solid #eaa954;
+    color: #eaa954;
+    transition: background 0.5s, color 0.5s; }
+    .sanlo-button:hover {
+      background-color: #eaa954;
+      color: #fff !important;
+      transition: background 0.5s, color 0.5s; }
   .unordered-list {
     text-align: left;
     font-family: 'Libre Baskerville', serif;
@@ -1513,6 +1664,28 @@ body {
         display: block;
         height: 100vh;
         width: 100%; }
+  .grow-sanlo-home {
+    text-align: center;
+    padding: 2.5em 0em 2.5em 0em;
+    background-image: url("../img/home/grow-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #75DF7D; }
+    .grow-sanlo-home .row a {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+      color: #4AC153;
+      background-color: #fff;
+      padding: 1em 3em 1em 3em;
+      border-radius: 100px;
+      transition: all 0.3s; }
+      .grow-sanlo-home .row a:hover {
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+        transition: all 0.3s; }
   .location-holder .row br {
     display: none; }
   .info-bg {
@@ -1683,6 +1856,89 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     background-color: #f2f2f2; }
+  #grow-banner {
+    background: url(../img/banner/grow-banner.jpg) no-repeat 100% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  .grow-hero {
+    padding-top: 2em;
+    background-color: #f2f2f2;
+    height: 80vh; }
+    .grow-hero .row {
+      height: inherit; }
+      .grow-hero .row .grow-logo-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        height: inherit; }
+        .grow-hero .row .grow-logo-holder .grow-logo {
+          display: inline-block;
+          height: 300px;
+          width: auto; }
+  .grow-section-bg {
+    text-align: center;
+    padding: 4em 0em 5em 0em; }
+    .grow-section-bg .grow-section {
+      padding-top: 2.8em; }
+      .grow-section-bg .grow-section h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #147E46;
+        font-size: 2em; }
+      .grow-section-bg .grow-section h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #eaa954;
+        padding-top: 0.2em; }
+      .grow-section-bg .grow-section h3 {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #147E46;
+        font-size: 1.2em;
+        padding-top: 1.5em; }
+      .grow-section-bg .grow-section h4 {
+        color: #147E46;
+        font-size: 1.5em;
+        padding-bottom: 1em; }
+      .grow-section-bg .grow-section h5 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #eaa954;
+        font-size: 1.5em;
+        padding-top: 2em;
+        padding-bottom: 1em; }
+      .grow-section-bg .grow-section p {
+        font-family: 'Libre Baskerville', serif;
+        font-style: normal;
+        font-weight: 400;
+        padding: 1em 0em 1.5em 0em;
+        color: #818181; }
+      .grow-section-bg .grow-section .grow-values-desktop {
+        padding-top: 2em;
+        padding-bottom: 3.5em;
+        display: inline-block; }
+      .grow-section-bg .grow-section .grow-values-mobile {
+        display: none; }
+      .grow-section-bg .grow-section hr {
+        margin: 4em 0 5em 0;
+        display: inline-block;
+        width: 4em; }
+      .grow-section-bg .grow-section ul {
+        text-align: left;
+        color: #818181;
+        display: inline-block; }
+        .grow-section-bg .grow-section ul li {
+          list-style-type: upper-roman; }
   .about-hero {
     padding-top: 4em;
     background-color: #f2f2f2;

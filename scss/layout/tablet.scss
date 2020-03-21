@@ -694,5 +694,32 @@
       margin-top: 1.2em;
     }
 
+    .grow-section-bg {
+
+        .grow-section {
+
+            .grow-values-desktop {
+              display: inline-block;
+              padding: 2em 0em 2em 0em;
+            }
+            .grow-values-mobile {
+              display: none;
+            }
+            a {
+
+    						&:hover {
+
+    						}
+    				}
+            hr {
+
+    				}
+            .vimeo-holder {
+
+            }
+
+        }
+    }
+
 
 }
