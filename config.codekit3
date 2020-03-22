@@ -2339,7 +2339,7 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/css/desktop.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -2352,7 +2352,7 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/css/mobile.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -2365,7 +2365,7 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/css/tablet.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -2415,11 +2415,19 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/css/style.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
+		},
+	"/sermons.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/sermons.html",
+		"oF": 0
 		},
 	"/small-groups.html": {
 		"cB": 0,
