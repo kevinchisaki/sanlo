@@ -501,6 +501,46 @@
 		background-color: #f2f2f2;
 	}
 
+	#pastor-rod-banner {
+		background: url(../img/banner/rod-banner.jpg) no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		background-color: #f2f2f2;
+	  }
+
+
+	  // Pastor Rod 
+
+	.rod-hero {
+		padding-top: 3.8em;
+		background-color: #f2f2f2;
+		height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+			.row {
+				text-align: center;
+					h1 {
+						@include playfair-italic;
+						color: #ffffff;
+						font-size: 2.5em;
+					}
+
+					h2 {
+						@include pathway-gothic;
+						text-transform: uppercase;
+						padding-top: 5px;
+						color: $sanlo-gold;
+						font-size: 1.5em;
+					}
+
+			br {
+			display: block;
+			}
+			}
+	}
+
 
 	// Grow SanLo
 

@@ -446,6 +446,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/banner/rod-banner-2.jpg": {
+		"ft": 16384,
+		"iS": 119927,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/banner/rod-banner-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/banner/rod-banner.jpg": {
+		"ft": 16384,
+		"iS": 111138,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/banner/rod-banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/banner/small-group-banner.jpg": {
 		"ft": 16384,
 		"iS": 292103,
@@ -885,6 +907,14 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/outreach.html",
+		"oF": 0
+		},
+	"/pastor-rod-memorial-fund.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/pastor-rod-memorial-fund.html",
 		"oF": 0
 		},
 	"/purpose.html": {

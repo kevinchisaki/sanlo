@@ -528,6 +528,39 @@ body {
   background-size: cover;
   background-color: #f2f2f2; }
 
+#pastor-rod-banner {
+  background: url(../img/banner/rod-banner.jpg) no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: #f2f2f2; }
+
+.rod-hero {
+  padding-top: 3.8em;
+  background-color: #f2f2f2;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .rod-hero .row {
+    text-align: center; }
+    .rod-hero .row h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 2.5em; }
+    .rod-hero .row h2 {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-top: 5px;
+      color: #eaa954;
+      font-size: 1.5em; }
+    .rod-hero .row br {
+      display: block; }
+
 .grow-hero {
   padding-top: 2em;
   background-color: #f2f2f2;
@@ -680,6 +713,9 @@ body {
       font-size: 1.6rem;
       color: #eaa954;
       padding: 1em 0em 0.3em 0em; }
+    .about-section-bg .about-section .verse {
+      font-size: 1.5rem;
+      padding: 0.8em 0em 0em 0em; }
     .about-section-bg .about-section p {
       font-family: 'Libre Baskerville', serif;
       font-style: normal;
@@ -688,6 +724,8 @@ body {
       line-height: 1.5em;
       padding-top: 1em;
       font-size: 1rem; }
+    .about-section-bg .about-section .verse-p {
+      padding-top: 0.3em; }
     .about-section-bg .about-section a {
       color: #eaa954;
       transition: color 0.5s; }
@@ -1936,6 +1974,37 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     background-color: #f2f2f2; }
+  #pastor-rod-banner {
+    background: url(../img/banner/rod-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #f2f2f2; }
+  .rod-hero {
+    padding-top: 3.8em;
+    background-color: #f2f2f2;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .rod-hero .row {
+      text-align: center; }
+      .rod-hero .row h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 2.5em; }
+      .rod-hero .row h2 {
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-top: 5px;
+        color: #eaa954;
+        font-size: 1.5em; }
+      .rod-hero .row br {
+        display: block; }
   .grow-hero {
     padding-top: 2em;
     background-color: #f2f2f2;
